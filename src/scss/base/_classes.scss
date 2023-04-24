@@ -11,15 +11,15 @@
 /* Hide */
 
 .hide {
-    display: none !important;
-}
-
-.hide-medium {
-	@include medium(display, none !important);
+	display: none !important;
 }
 
 .hide-tablet {
 	@include tablet(display, none !important);
+}
+
+.hide-tabletSM {
+	@include tabletSM(display, none !important);
 }
 
 .hide-mobile {
@@ -46,9 +46,13 @@
     &--white {
         background-color: var(--color-white);
     }
-    &--dark {
-        background-color: var(--color-dark);
+    &--blue {
+        background-color: var(--color-blue);
     }
+}
+
+.block-padding {
+	padding: 75px 0;
 }
 
 /* Links */
@@ -59,52 +63,56 @@
 }
 
 .link:hover {
-    color: var(--color-orange);
+    color: var(--color-blue);
 }
 
 /* Title */
 
 .title {
-    font-family: var(--font-gotham);
+    font-family: var(--font-inter);
     font-style: normal;
     margin: 0;
+	&--huge {
+		font-size: responsive 40px 100px;
+		font-range: 320px 1440px;
+	}
     &--big {
-        font-size: responsive 16px 45px;
+        font-size: responsive 40px 50px;
         font-range: 320px 1440px;
     }
     &--large {
-        font-size: responsive 20px 26px;
+        font-size: responsive 30px 40px;
         font-range: 1024px 1440px;
     }
     &--medium {
-        font-size: responsive 18px 22px;
+        font-size: responsive 25px 30px;
         font-range: 1024px 1440px;
     }
     &--small {
-        font-size: 16px;
+        font-size: 25px;
     }
     &--tiny {
-        font-size: 12px;
+        font-size: 18px;
     }
-    &--orange {
-        color: var(--color-orange);
+    &--black {
+        color: var(--color-black);
     }
     &--white {
         color: var(--color-white);
-	}
-    &--black-gray {
-		color: var(--color-black-gray); 
 	}
 	&--w-light {
 		font-weight: 300;
     }
     &--w-normal {
-		font-weight: 400;
+		font-weight: normal;
 	}
     &--w-medium {
 		font-weight: 500;
 	}
 	&--w-bold {
+		font-weight: bold;
+	}
+	&--w-extra-bold {
 		font-weight: bold;
 	}
 	&--w-black {
@@ -116,32 +124,28 @@
 }
 
 .title--indent {
-    margin: 0 0 30px 50px;
-    @include tablet(margin, 0 0 20px 15px);
-    @include mobile(margin, 0 0 20px 0);
+    margin: 0 0 50px;
+    @include tablet(margin, 0 0 30px);
 }
 
 /* Text */
 
 .text {
-    font-family: var(--font-roboto);
+    font-family: var(--font-inter);
     font-style: normal;
     margin: 0;
-	&--black-gray {
-		color: var(--color-black-gray); 
-	}
-	&--orange {
-		color: var(--color-orange);
+	&--black {
+		color: var(--color-black);
 	}
 	&--white {
 		color: var(--color-white);
 	}
 	&--big {
-        font-size: responsive 20px 30px;
+        font-size: responsive 25px 30px;
         font-range: 320px 1440px;
 	}
 	&--large {
-        font-size: responsive 14px 22px;
+        font-size: responsive 20px 25px;
         font-range: 320px 1440px;
 	}
 	&--normal {
