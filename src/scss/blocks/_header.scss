@@ -1,0 +1,31 @@
+.header {
+  position: relative;
+  padding: 0 65px;
+}
+
+.header__body {
+  position: relative;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.header__outer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__logo {
+  padding-top: 44px;
+}
+
+.header__logo-img {
+  display: block;
+}
+
+.header__phone {
+  padding-top: 44px;
+}
+
+.header__inner {
+  align-self: flex-start;
+}

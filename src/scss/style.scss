@@ -20,8 +20,16 @@
 
 /* Blocks */
 /* Page */
-@import "./blocks/page/page";
+@import "./blocks/page";
+/* Header */
+@import "./blocks/header";
+/* Menu */
+@import "./blocks/menu";
+/* Burger-menu */
+@import "./blocks/burger-menu";
 /* Contacts */
 @import "./blocks/contacts";
+/* Footer */
+@import "./blocks/footer";
 
 /* MEDIA QUERIES */
