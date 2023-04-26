@@ -14,6 +14,7 @@
 
 {% include "templates/_top-screen.html" %}
 {% include "templates/_plunks.html" %}
+
 <!-- Text-plunk -->
 <div class="text-plunk block-padding-small bg--blue">
     <div class="text-plunk__body container">
@@ -27,6 +28,62 @@
     </div>
 </div>
 <!-- /. Text-plunk -->
+
+<!-- Result -->
+<section class="result block-padding-small">
+    <div class="result__body container">
+        <h2 class="result__heading title title--medium title--black title--w-bold title--indent center">
+            Результаты участия в проекте
+        </h2>
+        <div class="result__cards">
+            <!-- Result-card -->
+            <div class="result-card">
+                <p class="result-card__text text text--normal text--black text--w-light center">
+                    Готовый план реализации проекта и его успешная презентация перед менторским советом
+                </p>
+            </div>
+            <!-- /. Result-card -->
+            <!-- Result-card -->
+            <div class="result-card">
+                <p class="result-card__text text text--normal text--black text--w-light center">
+                    Приобретение навыков в сфере экологического предпринимательства
+                </p>
+            </div>
+            <!-- /. Result-card -->
+            <!-- Result-card -->
+            <div class="result-card">
+                <p class="result-card__text text text--normal text--black text--w-light center">
+                    Поддержка проекта на дальнейших этапах
+                </p>
+            </div>
+            <!-- /. Result-card -->
+            <!-- Result-card -->
+            <div class="result-card">
+                <p class="result-card__text text text--normal text--black text--w-light center">
+                    Диплом и сертификат о прохождении программы
+                </p>
+            </div>
+            <!-- /. Result-card -->
+            <!-- Result-card -->
+            <div class="result-card">
+                <p class="result-card__text text text--normal text--black text--w-light center">
+                    Призы и подарки от партнеров проекта
+                </p>
+            </div>
+            <!-- /. Result-card -->
+            <!-- Result-card -->
+            <div class="result-card">
+                <p class="result-card__text text text--normal text--black text--w-light center">
+                    Причастность к сообществу единомышленников
+                </p>
+            </div>
+            <!-- /. Result-card -->
+        </div>
+    </div>
+</section>
+<!-- /. Result-->
+
+{% include "templates/_invite.html" %}
 
 <!-- Steps -->
 <section class="steps block-padding-small">
@@ -76,7 +133,7 @@
     </div>
 </section>
 <!-- /. Steps -->
+
 {% include "templates/_another.html" %}
-{% include "templates/_invite.html" %}
 
 {% endblock %}

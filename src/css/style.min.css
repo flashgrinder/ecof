@@ -699,6 +699,26 @@ img {
   margin-top: 40px;
 }
 
+/* Result */
+
+.result__cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-gap: 25px;
+  grid-template-rows: 1fr;
+}
+
+/* Result-card */
+
+.result-card {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 46px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+}
+
 /* Steps */
 
 .steps__items {
@@ -1114,6 +1134,10 @@ img {
   .container-full {
     padding-left: 10px;
     padding-right: 10px;
+  }
+
+  .result__cards {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
 
   .wysiwyg ul,
