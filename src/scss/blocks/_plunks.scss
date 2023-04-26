@@ -1,0 +1,9 @@
+.plunks__items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(230px, 1fr));
+  grid-template-rows: 1fr;
+  align-items: stretch;
+  justify-content: space-between;
+  grid-gap: 5px;
+  margin-top: 50px;
+}
