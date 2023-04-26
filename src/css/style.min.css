@@ -689,6 +689,13 @@ img {
   margin-top: 25px;
 }
 
+/* Invite */
+
+.invite__description,
+.invite__action {
+  margin-top: 50px;
+}
+
 /* Wysiwyg */
 
 .wysiwyg {
