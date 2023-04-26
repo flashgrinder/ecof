@@ -2,15 +2,16 @@
 <section class="plunks block-padding-small">
     <div class="plunks__body container">
         <h2 class="plunks__heading title title--medium title--black title--w-bold title--indent center">
-            Активности ЭКОклуб
+            {{ title_wysiwyg }}
         </h2>
         <!-- Wysiwyg -->
         <div class="plunks__wysiwyg wysiwyg center">
             <p>
-                Участие во всех мероприятиях ECOclub бесплатное!
+                {{ description_wysiwyg }}
             </p>
         </div>
         <!-- /. Wysiwyg -->
+        {% if(title == 'ЭКОклуб') %}
         <div class="plunks__items">
             <!-- Plunk -->
             <article class="plunk">
@@ -63,6 +64,7 @@
             </article>
             <!-- /. Plunk -->
         </div>
+        {% endif %}
     </div>
 </section>
 <!-- /. Plunks-->

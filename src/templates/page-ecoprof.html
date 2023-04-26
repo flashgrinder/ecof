@@ -1,0 +1,77 @@
+{% set title = 'ECOprof' %}
+{% set subtitle = 'Будущее экологического предпринимательства за сегодняшними школьниками!' %}
+{% set description = 'ECOprof — акселератор по разработке предпринимательских проектов в сфере устойчивого развития. ' %}
+{% set image = 'ecoprof.svg' %}
+
+{% set title_wysiwyg = 'Для детей и их родителей' %}
+{% set description_wysiwyg = 'Мы формируем экологическую культуру и навыки для разработки проектов, позволяющих сберечь и приумножить природные ресурсы для будущих поколений.' %}
+
+{% set title_invite = 'Присоединяйся к ECOprof' %}
+
+{% extends "layouts/_default.html" %}
+
+{% block content %}
+
+{% include "templates/_top-screen.html" %}
+{% include "templates/_plunks.html" %}
+<!-- Text-plunk -->
+<div class="text-plunk block-padding-small bg--blue">
+    <div class="text-plunk__body container">
+        <div class="text-plunk__icon center">
+            <img src="img/an-pic/text-plunk-icon.svg" alt="" class="text-plunk__img">
+        </div>
+        <p class="text-plunk__desc text text--large text--white text--w-light center">
+            Участники знакомятся с такими понятиями, как социальное <br> предпринимательство, осознанное потребление,
+            <br> устойчивое развитие.
+        </p>
+    </div>
+</div>
+<!-- /. Text-plunk -->
+
+<!-- Steps -->
+<section class="steps block-padding-small">
+    <div class="steps__body container">
+        <h2 class="steps__heading title title--medium title--black title--w-bold title--indent center">
+            ECOprof для вашей компании это:
+        </h2>
+        <div class="steps__items">
+            <div class="steps__item">
+                <div class="steps__num">
+                    1
+                </div>
+                <p class="steps__text text text--normal text--black text--w-light center">
+                    Быть проводником устойчивого развития — ваше репутационное преимущество
+                </p>
+            </div>
+            <div class="steps__item">
+                <div class="steps__num">
+                    2
+                </div>
+                <p class="steps__text text text--normal text--black text--w-light center">
+                    Развитие в сфере корпоративного социального партнерства — международный знак качества
+                </p>
+            </div>
+            <div class="steps__item">
+                <div class="steps__num">
+                    3
+                </div>
+                <p class="steps__text text text--normal text--black text--w-light center">
+                    Нестандартное решение задач в области корпоративной социальной ответственности
+                </p>
+            </div>
+            <div class="steps__item">
+                <div class="steps__num">
+                    4
+                </div>
+                <p class="steps__text text text--normal text--black text--w-light center">
+                    Экостратегия — инструмент продвижения имиджа организации и фактор роста лояльности к компании
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /. Steps -->
+{% include "templates/_another.html" %}
+{% include "templates/_invite.html" %}
+
+{% endblock %}
