@@ -1,0 +1,35 @@
+.button {
+  font-family: var(--font-inter);
+  font-weight: 400;
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  font-style: normal;
+  text-decoration: none;
+  text-align: center;
+  font-size: 25px;
+  line-height: 25px;
+  border-radius: 10px;
+  padding: 25px 50px;
+  z-index: 10;
+  outline: var(--color-blue);
+  transition: background .250s ease-in-out, color .250s ease-in-out, border .250s ease-in-out;
+  overflow: hidden;
+}
+
+/* Button primary */
+.button--primary {
+  color: var(--color-white);
+  background: var(--color-green);
+  transition: color .300s, border .300s, background .300s;
+}
+
+.button--primary:hover,
+.button--primary:target,
+.button--primary:active {
+  background: var(--color-dark-green);
+}
+
+.button--primary:disabled {
+  opacity: .45;
+}
