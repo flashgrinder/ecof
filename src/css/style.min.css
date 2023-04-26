@@ -746,6 +746,10 @@ img {
   max-width: 270px;
 }
 
+.steps__action {
+  margin-top: 100px;
+}
+
 /* Invite */
 
 .invite__description,
