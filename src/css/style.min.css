@@ -875,6 +875,7 @@ img {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
   border-radius: 20px;
   padding: 23px 20px;
+  background: var(--color-white);
 }
 
 .plunk__icon {
