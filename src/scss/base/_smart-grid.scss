@@ -64,7 +64,7 @@ $fields_mobileXS: 10px;
 }
 
 @mixin wrapper(){
-    max-width: 1480px;
+    max-width: 1520px;
     margin: 0 auto;
     @include wrapper-full();
 }
