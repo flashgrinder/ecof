@@ -3,9 +3,6 @@
 {% set description = 'ECOprof — акселератор по разработке предпринимательских проектов в сфере устойчивого развития. ' %}
 {% set image = 'ecoprof.svg' %}
 
-{% set title_wysiwyg = 'Для детей и их родителей' %}
-{% set description_wysiwyg = 'Мы формируем экологическую культуру и навыки для разработки проектов, позволяющих сберечь и приумножить природные ресурсы для будущих поколений.' %}
-
 {% set title_invite = 'Присоединяйся к ECOprof' %}
 
 {% extends "layouts/_default.html" %}
@@ -13,7 +10,23 @@
 {% block content %}
 
 {% include "templates/_top-screen.html" %}
-{% include "templates/_plunks.html" %}
+
+<!-- Plunks -->
+<section class="plunks block-padding-small">
+    <div class="plunks__body container">
+        <h2 class="plunks__heading title title--medium title--black title--w-bold title--indent center">
+            Для детей и их родителей
+        </h2>
+        <!-- Wysiwyg -->
+        <div class="plunks__wysiwyg wysiwyg center">
+            <p>
+                Мы формируем экологическую культуру и навыки для разработки проектов, позволяющих сберечь и приумножить природные ресурсы для будущих поколений
+            </p>
+        </div>
+        <!-- /. Wysiwyg -->
+    </div>
+</section>
+<!-- /. Plunks-->
 
 <!-- Text-plunk -->
 <div class="text-plunk block-padding-small bg--blue">

@@ -3,9 +3,6 @@
 {% set description = 'Реализуйте свои навыки, воплощайте идеи и узнавайте новое!' %}
 {% set image = 'eco-club.svg' %}
 
-{% set title_wysiwyg = 'Активности ЭКОклуб' %}
-{% set description_wysiwyg = 'Участие во всех мероприятиях ECOclub бесплатное!' %}
-
 {% set title_invite = 'Хочешь к нам в команду?' %}
 
 {% extends "layouts/_default.html" %}
@@ -13,7 +10,76 @@
 {% block content %}
 
 {% include "templates/_top-screen.html" %}
-{% include "templates/_plunks.html" %}
+
+<!-- Plunks -->
+<section class="plunks block-padding-small">
+    <div class="plunks__body container">
+        <h2 class="plunks__heading title title--medium title--black title--w-bold title--indent center">
+            Активности ЭКОклуб
+        </h2>
+        <!-- Wysiwyg -->
+        <div class="plunks__wysiwyg wysiwyg center">
+            <p>
+                Участие во всех мероприятиях ECOclub бесплатное!
+            </p>
+        </div>
+        <!-- /. Wysiwyg -->
+        <div class="plunks__items">
+            <!-- Plunk -->
+            <article class="plunk">
+                <div class="plunk__icon">
+                    <img src="img/plunks/plunk-1.svg" alt="" class="plunk__img-icon">
+                </div>
+                <p class="plunk__text text text--normal text--black text--w-light center">
+                    Экскурсии на мусороперерабатывающие комплексы и предприятия
+                </p>
+            </article>
+            <!-- /. Plunk -->
+            <!-- Plunk -->
+            <article class="plunk">
+                <div class="plunk__icon">
+                    <img src="img/plunks/plunk-2.svg" alt="" class="plunk__img-icon">
+                </div>
+                <p class="plunk__text text text--normal text--black text--w-light center">
+                    Посещение тематических выставок
+                </p>
+            </article>
+            <!-- /. Plunk -->
+            <!-- Plunk -->
+            <article class="plunk">
+                <div class="plunk__icon">
+                    <img src="img/plunks/plunk-3.svg" alt="" class="plunk__img-icon">
+                </div>
+                <p class="plunk__text text text--normal text--black text--w-light center">
+                    Участие в конференциях и форумах по всей России
+                </p>
+            </article>
+            <!-- /. Plunk -->
+            <!-- Plunk -->
+            <article class="plunk">
+                <div class="plunk__icon">
+                    <img src="img/plunks/plunk-4.svg" alt="" class="plunk__img-icon">
+                </div>
+                <p class="plunk__text text text--normal text--black text--w-light center">
+                    Мастер-классы по кастомизации одежды, изготовлению открыток и др.
+                </p>
+            </article>
+            <!-- /. Plunk -->
+            <!-- Plunk -->
+            <article class="plunk">
+                <div class="plunk__icon">
+                    <img src="img/plunks/plunk-5.svg" alt="" class="plunk__img-icon">
+                </div>
+                <p class="plunk__text text text--normal text--black text--w-light center">
+                    Обучение по системе наставничества
+                </p>
+            </article>
+            <!-- /. Plunk -->
+        </div>
+    </div>
+</section>
+<!-- /. Plunks-->
+
 {% include "templates/_calendar.html" %}
 {% include "templates/_another.html" %}
 {% include "templates/_invite.html" %}

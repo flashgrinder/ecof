@@ -3,10 +3,6 @@
 {% set description = 'Наша команда комплексно внедряет систему раздельного сбора отходов на территориях учебных заведений и офисов.' %}
 {% set image = 'rso.svg' %}
 
-{% set title_wysiwyg = 'Для учебных заведений' %}
-{% set description_wysiwyg = 'В 2022 году при поддержке Фонда президентских грантов мы установили трехсекционные урны и металлические сетки для раздельного сбора отходов в 8 школах Саратова. Наши партнеры организовали вывоз пластика, макулатуры, металла.' %}
-{% set description_wysiwyg_2 = 'Для того чтобы система работала на практике, мы проводим курс ЭКОуроков по раздельному сбору отходов и учим школьников правильно сортировать отходы, которые образуются в процессе обучения. Наш опыт показал, что учащиеся начинают внедрять сортировку отходов и дома, передают знания своим родителям и знакомым!' %}
-
 {% set title_invite = 'Хочешь к нам в команду?' %}
 
 {% extends "layouts/_default.html" %}
@@ -14,7 +10,80 @@
 {% block content %}
 
 {% include "templates/_top-screen.html" %}
-{% include "templates/_plunks.html" %}
+
+<!-- Plunks -->
+<section class="plunks block-padding-small">
+    <div class="plunks__body container">
+        <h2 class="plunks__heading title title--medium title--black title--w-bold title--indent center">
+            Для учебных заведений
+        </h2>
+        <!-- Wysiwyg -->
+        <div class="plunks__wysiwyg wysiwyg center">
+            <p>
+                В 2022 году при поддержке Фонда президентских грантов мы установили трехсекционные урны и металлические сетки для раздельного сбора отходов в 8 школах Саратова. Наши партнеры организовали вывоз пластика, макулатуры, металла.
+            </p>
+            <p>
+                Для того чтобы система работала на практике, мы проводим курс ЭКОуроков по раздельному сбору отходов и учим школьников правильно сортировать отходы, которые образуются в процессе обучения. Наш опыт показал, что учащиеся начинают внедрять сортировку отходов и дома, передают знания своим родителям и знакомым!
+            </p>
+        </div>
+        <!-- /. Wysiwyg -->
+        {% if(title == 'ЭКОклуб') %}
+        <div class="plunks__items">
+            <!-- Plunk -->
+            <article class="plunk">
+                <div class="plunk__icon">
+                    <img src="img/plunks/plunk-1.svg" alt="" class="plunk__img-icon">
+                </div>
+                <p class="plunk__text text text--normal text--black text--w-light center">
+                    Экскурсии на мусороперерабатывающие комплексы и предприятия
+                </p>
+            </article>
+            <!-- /. Plunk -->
+            <!-- Plunk -->
+            <article class="plunk">
+                <div class="plunk__icon">
+                    <img src="img/plunks/plunk-2.svg" alt="" class="plunk__img-icon">
+                </div>
+                <p class="plunk__text text text--normal text--black text--w-light center">
+                    Посещение тематических выставок
+                </p>
+            </article>
+            <!-- /. Plunk -->
+            <!-- Plunk -->
+            <article class="plunk">
+                <div class="plunk__icon">
+                    <img src="img/plunks/plunk-3.svg" alt="" class="plunk__img-icon">
+                </div>
+                <p class="plunk__text text text--normal text--black text--w-light center">
+                    Участие в конференциях и форумах по всей России
+                </p>
+            </article>
+            <!-- /. Plunk -->
+            <!-- Plunk -->
+            <article class="plunk">
+                <div class="plunk__icon">
+                    <img src="img/plunks/plunk-4.svg" alt="" class="plunk__img-icon">
+                </div>
+                <p class="plunk__text text text--normal text--black text--w-light center">
+                    Мастер-классы по кастомизации одежды, изготовлению открыток и др.
+                </p>
+            </article>
+            <!-- /. Plunk -->
+            <!-- Plunk -->
+            <article class="plunk">
+                <div class="plunk__icon">
+                    <img src="img/plunks/plunk-5.svg" alt="" class="plunk__img-icon">
+                </div>
+                <p class="plunk__text text text--normal text--black text--w-light center">
+                    Обучение по системе наставничества
+                </p>
+            </article>
+            <!-- /. Plunk -->
+        </div>
+        {% endif %}
+    </div>
+</section>
+<!-- /. Plunks-->
 
 <!-- Plunks -->
 <section class="plunks block-padding-small bg--light-blue">
