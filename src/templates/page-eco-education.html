@@ -1,0 +1,335 @@
+{% set title = 'ЭКО просвещение' %}
+{% set subtitle = 'Комплекс образовательных мероприятий по повышению экологической культуры' %}
+{% set description = 'Участники узнают, как правильно разделять отходы, научатся вести осознанный образ жизни и приобретут ЭКОпривычки!' %}
+{% set image = 'eco-education.svg' %}
+
+{% set title_invite = 'Хочешь к нам в команду?' %}
+
+{% extends "layouts/_default.html" %}
+
+{% block content %}
+
+{% include "templates/_top-screen.html" %}
+
+<!-- Plunks -->
+<section class="plunks block-padding-small">
+    <div class="plunks__body container">
+        <h2 class="plunks__heading title title--medium title--black title--w-bold title--indent center">
+            Уроки
+        </h2>
+        <!-- Wysiwyg -->
+        <div class="plunks__wysiwyg wysiwyg center">
+            <p>
+                ЭКОурок — занятие в игровой форме для детей школьного и дошкольного возраста, рассчитанное на один академический час (45 минут). На уроках мы совмещаем теорию с практикой, смотрим обучающие ролики, проходим тесты и викторины.
+            </p>
+            <p>
+                Курс ЭКОуроков включает в себя 4 основные темы:
+            </p>
+        </div>
+        <!-- /. Wysiwyg -->
+        <div class="plunks__items">
+            <!-- Plunk -->
+            <article class="plunk">
+                <div class="plunk__icon">
+                    <img src="img/plunks/plunk-eco-ed-1.svg" alt="" class="plunk__img-icon">
+                </div>
+                <p class="plunk__text text text--normal text--black text--w-light center">
+                    Сортировка и переработка отходов
+                </p>
+            </article>
+            <!-- /. Plunk -->
+            <!-- Plunk -->
+            <article class="plunk">
+                <div class="plunk__icon">
+                    <img src="img/plunks/plunk-eco-ed-2.svg" alt="" class="plunk__img-icon">
+                </div>
+                <p class="plunk__text text text--normal text--black text--w-light center">
+                    Правило 5R или Zero west
+                </p>
+            </article>
+            <!-- /. Plunk -->
+            <!-- Plunk -->
+            <article class="plunk">
+                <div class="plunk__icon">
+                    <img src="img/plunks/plunk-eco-ed-3.svg" alt="" class="plunk__img-icon">
+                </div>
+                <p class="plunk__text text text--normal text--black text--w-light center">
+                    Осознанный образ жизни
+                </p>
+            </article>
+            <!-- /. Plunk -->
+            <!-- Plunk -->
+            <article class="plunk">
+                <div class="plunk__icon">
+                    <img src="img/plunks/plunk-eco-ed-4.svg" alt="" class="plunk__img-icon">
+                </div>
+                <p class="plunk__text text text--normal text--black text--w-light center">
+                    Внедрение экологических привычек
+                </p>
+            </article>
+            <!-- /. Plunk -->
+        </div>
+    </div>
+</section>
+<!-- /. Plunks-->
+
+<!-- Slider-cards -->
+<section class="slider-cards bg--light-blue js-slider-cards-init block-padding-small">
+    <div class="slider-cards__body container">
+        <h2 class="slider-cards__heading title title--medium title--black title--w-bold title--indent center">
+            Как это работает?
+        </h2>
+        <div class="slider-cards__outer js-slider-cards-outer">
+            <div class="slider-cards__swiper-container swiper-container js-slider-cards">
+                <div class="slider-cards__swiper-wrapper swiper-wrapper">
+
+                    <div class="slider-cards__swiper-slide swiper-slide">
+                        <article class="plunk">
+                            <div class="plunk__icon">
+                                <img src="img/slider-cards/work-1.svg" alt="" class="plunk__img-icon">
+                            </div>
+                            <p class="plunk__text text text--normal text--black text--w-light center">
+                                Индивидуальный подход (программа строится исходя из вашего запроса и возраста участников)
+                            </p>
+                        </article>
+                    </div>
+                    <div class="slider-cards__swiper-slide swiper-slide">
+                        <article class="plunk">
+                            <div class="plunk__icon">
+                                <img src="img/slider-cards/work-2.svg" alt="" class="plunk__img-icon">
+                            </div>
+                            <p class="plunk__text text text--normal text--black text--w-light center">
+                                Квалифицированные специалисты (эксперты проекта, предприниматели, опытные эко-волонтеры)
+                            </p>
+                        </article>
+                    </div>
+                    <div class="slider-cards__swiper-slide swiper-slide">
+                        <article class="plunk">
+                            <div class="plunk__icon">
+                                <img src="img/slider-cards/work-3.svg" alt="" class="plunk__img-icon">
+                            </div>
+                            <p class="plunk__text text text--normal text--black text--w-light center">
+                                Интерактивный подход (обучающие материалы и игры, видеоролики)
+                            </p>
+                        </article>
+                    </div>
+                    <div class="slider-cards__swiper-slide swiper-slide">
+                        <article class="plunk">
+                            <div class="plunk__icon">
+                                <img src="img/slider-cards/work-4.svg" alt="" class="plunk__img-icon">
+                            </div>
+                            <p class="plunk__text text text--normal text--black text--w-light center">
+                                Мобильность (выезды в школу/садик/университет и на другие площадки)
+                            </p>
+                        </article>
+                    </div>
+                    <div class="slider-cards__swiper-slide swiper-slide">
+                        <article class="plunk">
+                            <div class="plunk__icon">
+                                <img src="img/slider-cards/work-5.svg" alt="" class="plunk__img-icon">
+                            </div>
+                            <p class="plunk__text text text--normal text--black text--w-light center">
+                                Нестандартный формат занятий (в теплое время года уроки проводятся на свежем воздухе)
+                            </p>
+                        </article>
+                    </div>
+                    <div class="slider-cards__swiper-slide swiper-slide">
+                        <article class="plunk">
+                            <div class="plunk__icon">
+                                <img src="img/slider-cards/work-6.svg" alt="" class="plunk__img-icon">
+                            </div>
+                            <p class="plunk__text text text--normal text--black text--w-light center">
+                                Развитие hard и soft skills
+                            </p>
+                        </article>
+                    </div>
+
+                </div>
+            </div>
+            <div class="slider-cards__nav">
+                <div class="slider-cards__swiper-button-prev slider-cards__slider-arrow js-slider-cards-prev">
+                    <svg class="slider-cards__slider-arrow-svg" width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 1L1.82588 4.75671C1.3845 5.15395 1.3845 5.84605 1.82588 6.24329L6 10" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </div>
+                <div class="slider-cards__swiper-button-next slider-cards__slider-arrow js-slider-cards-next">
+                    <svg class="slider-cards__slider-arrow-svg" width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L5.17412 4.75671C5.6155 5.15395 5.6155 5.84605 5.17412 6.24329L1 10" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /. Slider-cards -->
+
+<!-- Format -->
+<section class="format block-padding-small">
+    <div class="format__body container">
+        <div class="format__items">
+            <div class="format__item">
+                <div class="format__icon">
+                    <img src="img/an-pic/fpg-logo.png" alt="" class="format__img-icon">
+                </div>
+                <p class="format__text text text--large text--black text--w-light center">
+                    В 2022 году направление “ЭКОуроки” получило поддержку Фонда президентских грантов.
+                    <br>
+                    За год команда проекта проделала большую работу:
+                    <br>
+                    <br>
+                </p>
+                <div class="format__item-cards">
+                    <!-- Result-card -->
+                    <div class="result-card">
+                        <p class="result-card__text text text--normal text--black text--w-light center">
+                            Проведено 190 ЭКОуроков
+                        </p>
+                    </div>
+                    <!-- /. Result-card -->
+                    <!-- Result-card -->
+                    <div class="result-card">
+                        <p class="result-card__text text text--normal text--black text--w-light center">
+                            Организовано 3 акции по раздельному сбору отходов
+                        </p>
+                    </div>
+                    <!-- /. Result-card -->
+                    <!-- Result-card -->
+                    <div class="result-card">
+                        <p class="result-card__text text text--normal text--black text--w-light center">
+                            Собрано 50 тонн вторсырья
+                        </p>
+                    </div>
+                    <!-- /. Result-card -->
+                    <!-- Result-card -->
+                    <div class="result-card">
+                        <p class="result-card__text text text--normal text--black text--w-light center">
+                            В 8 школах г. Саратова установлены урны и сетки для раздельного сбора отходов
+                        </p>
+                    </div>
+                    <!-- /. Result-card -->
+                    <!-- Result-card -->
+                    <div class="result-card">
+                        <p class="result-card__text text text--normal text--black text--w-light center">
+                            Более 7000 школьников приняли участие в наших мероприятиях
+                        </p>
+                    </div>
+                    <!-- /. Result-card -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /. Format -->
+
+<!-- Partners-->
+<section class="partners block-padding-small bg--light-blue">
+    <div class="partners__body container">
+        <h2 class="partners__heading title title--medium title--black title--w-bold title--indent center">
+            Нашу деятельность отметили:
+        </h2>
+        <div class="partners__logos">
+            <div class="partners__logo">
+                <img src="img/partners/voir.png" alt="" class="partners__img-logo">
+            </div>
+            <div class="partners__logo">
+                <img src="img/partners/pg.png" alt="" class="partners__img-logo">
+            </div>
+            <div class="partners__logo">
+                <img src="img/partners/owc.png" alt="" class="partners__img-logo">
+            </div>
+            <div class="partners__logo">
+                <img src="img/partners/fcd.png" alt="" class="partners__img-logo">
+            </div>
+            <div class="partners__logo">
+                <img src="img/partners/fcg.png" alt="" class="partners__img-logo">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /. Partners-->
+
+<!--Тут будет слайдер с видео-->
+
+<!-- Format -->
+<section class="format block-padding-small bg--light-blue">
+    <div class="format__body container">
+        <h2 class="format__heading title title--medium title--black title--w-bold title--indent center">
+            Лекции
+        </h2>
+        <div class="format__items">
+            <div class="format__item">
+                <div class="format__icon">
+                    <img src="img/an-pic/les-1.svg" alt="" class="format__img-icon">
+                </div>
+                <div class="format__text text text--large text--black text--w-light center">
+                    Лекции — формат обучения для студентов, сотрудников, больших групп учащихся (более 35 человек).
+                    <br>
+                    <br>
+                    За 1,5 часа эксперты проведут лекцию и с помощью интерактивных тестов, кроссвордов и заданий закрепят материал на практике. На занятиях возможен разбор кейсов и ситуаций, исходя из интересов компании или направления обучения.
+                </div>
+            </div>
+            <div class="format__item">
+                <div class="format__icon">
+                    <img src="img/an-pic/les-2.svg" alt="" class="format__img-icon">
+                </div>
+                <p class="format__text text text--large text--black text--w-light center">
+                    Почему стоит выбрать нас?
+                </p>
+                <div class="format__icon format__icon--root">
+                    <img src="img/an-pic/format-root.svg" alt="" class="format__img-icon">
+                </div>
+                <div class="format__item-cards">
+                    <!-- Result-card -->
+                    <div class="result-card">
+                        <p class="result-card__text text text--normal text--black text--w-light center">
+                            Эксперты в сфере устойчивого развития поделятся не только теорией, но и дадут вам практические кейсы
+                        </p>
+                    </div>
+                    <!-- /. Result-card -->
+                    <!-- Result-card -->
+                    <div class="result-card">
+                        <p class="result-card__text text text--normal text--black text--w-light center">
+                            Лекции помогут вам организовать экологический процесс на работе и вдохновят на экологические подвиги
+                        </p>
+                    </div>
+                    <!-- /. Result-card -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /. Format -->
+
+<!-- Format -->
+<section class="format block-padding-small">
+    <div class="format__body container">
+        <div class="format__items">
+            <div class="format__item">
+                <div class="format__icon">
+                    <img src="img/an-pic/ed-1.svg" alt="" class="format__img-icon">
+                </div>
+                <div class="format__text text text--large text--black text--w-light center">
+                    Команда нашего проекта активно проводит лекции для всех возрастов: школьников, студентов и корпоративных работников.
+                    <br>
+                    <br>
+                    Темы лекций:
+                </div>
+            </div>
+            <div class="format__item">
+                <div class="format__text text text--large text--black text--w-light center">
+                    Узнайте больше о темах лекций и времени проведения, заполняйте форму приема заявок и мы свяжемся с вами в ближайшее время
+                </div>
+            </div>
+        </div>
+        <div class="format__action center">
+            <a href="javascript:;" class="format__btn button button--primary">
+                Присоединиться
+            </a>
+        </div>
+    </div>
+</section>
+<!-- /. Format -->
+
+{% include "templates/_another.html" %}
+
+{% endblock %}
