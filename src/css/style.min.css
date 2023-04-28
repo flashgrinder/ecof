@@ -1090,6 +1090,16 @@ img {
   right: -20px;
 }
 
+/* Slider-photo */
+
+.slider-photo__post-text {
+  margin-top: 50px;
+}
+
+.slider-photo__action {
+  margin-top: 50px;
+}
+
 /* Format */
 
 .format__item ~ .format__item {
