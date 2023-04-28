@@ -1302,6 +1302,28 @@ img {
   transition: ease 0.2s;
 }
 
+/* Features */
+
+.features__items {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  grid-gap: 25px 24px;
+}
+
+.features__card {
+  padding: 40px 46px;
+  background: var(--color-blue);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+  text-align: center;
+  max-width: 477px;
+}
+
+.features__text-card {
+  margin-top: 20px;
+}
+
 /* Buttons */
 
 .button {
@@ -1472,6 +1494,10 @@ img {
 
   .partners__root {
     max-width: 600px;
+  }
+
+  .features__card {
+    max-width: 100%;
   }
 
   .contacts__inner {
