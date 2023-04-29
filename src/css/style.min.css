@@ -663,6 +663,24 @@ img {
   display: none;
 }
 
+.swiper-container-fade.swiper-container-free-mode .swiper-slide {
+  transition-timing-function: ease-out;
+}
+
+.swiper-container-fade .swiper-slide {
+  pointer-events: none;
+  transition-property: opacity;
+}
+
+.swiper-container-fade .swiper-slide .swiper-slide {
+  pointer-events: none;
+}
+
+.swiper-container-fade .swiper-slide-active,
+.swiper-container-fade .swiper-slide-active .swiper-slide-active {
+  pointer-events: auto;
+}
+
 /* ANOTHER MODULES */
 
 /* Blocks */
@@ -1099,6 +1117,94 @@ img {
 }
 
 /* Slider-photo */
+
+.slider-photo__inner {
+  position: relative;
+}
+
+.slider-photo--name {
+  max-width: 846px;
+}
+
+.slider-photo__name {
+  transition: transform 0.2s ease-in-out;
+}
+
+.slider-photo--picture {
+  margin-top: 50px;
+}
+
+.slider-photo__swiper-slide.swiper-slide {
+  height: 100%;
+}
+
+.slider-photo__slide-inner {
+  height: 100%;
+}
+
+.slider-photo__descr,
+.slider-photo__pic {
+  margin-top: 50px;
+}
+
+.slider-photo__pic {
+  width: 100%;
+  position: relative;
+  padding-top: 56.25%;
+}
+
+.slider-photo__img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.slider-photo__nav {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 59%;
+  width: 100%;
+  z-index: 101;
+  transform: translateY(-59%);
+}
+
+.slider-photo__slider-arrow {
+  position: absolute;
+  top: 52%;
+  transform: translateY(-51%);
+  cursor: pointer;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  border-radius: 3px;
+  background: var(--color-white);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  padding: 15px;
+  transition: background 0.15s ease-in-out;
+}
+
+.slider-photo__slider-arrow:hover {
+  background: var(--color-green);
+}
+
+.slider-photo__slider-arrow:hover .slider-photo__slider-arrow-svg {
+  stroke: var(--color-white);
+}
+
+.slider-photo__slider-arrow-svg {
+  stroke: var(--color-black);
+  transition: stroke 0.15s ease-in-out;
+}
+
+.slider-photo__swiper-button-prev {
+  left: -20px;
+}
+
+.slider-photo__swiper-button-next {
+  right: -20px;
+}
 
 .slider-photo__post-text {
   margin-top: 50px;
@@ -1592,6 +1698,14 @@ img {
     right: -15px;
   }
 
+  .slider-photo__swiper-button-prev {
+    left: -15px;
+  }
+
+  .slider-photo__swiper-button-next {
+    right: -15px;
+  }
+
   .slider-video__swiper-button-prev {
     left: -15px;
   }
@@ -1616,6 +1730,24 @@ img {
 
   .burger-menu {
     display: flex;
+  }
+
+  .slider-photo__descr,
+  .slider-photo__pic {
+    margin-top: 30px;
+  }
+
+  .slider-photo__nav {
+    position: relative;
+    transform: translateY(0);
+    justify-content: center;
+    grid-gap: 30px;
+    margin-top: 20px;
+  }
+
+  .slider-photo__slider-arrow {
+    position: static;
+    transform: translateY(0);
   }
 
   .partners__root {
