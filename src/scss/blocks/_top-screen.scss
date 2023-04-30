@@ -1,20 +1,30 @@
 .top-screen__inner {
+  position: relative;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   grid-gap: 30px;
   align-items: center;
+  @include tablet-block {
+    grid-template-columns: minmax(400px, 1fr) minmax(600px, 1fr);
+  }
   @include mobile-block {
     grid-template-columns: 1fr;
     grid-gap: 45px;
   }
 }
 
-.top-screen__subheading {
-  margin-top: 60px;
-}
-
+.top-screen__subheading,
 .top-screen__descr {
   margin-top: 60px;
+  @include tablet(margint-top, 30px);
+}
+
+.top-screen__pic {
+  @include mobile-block {
+    position: absolute;
+    z-index: -1;
+    opacity: 0.1;
+  }
 }
 
 .top-screen__img {

@@ -13,6 +13,7 @@
 
 .menu__item ~ .menu__item {
   margin-left: 100px;
+  @include large(margin-left, 50px);
 }
 
 .menu__item {
@@ -32,12 +33,20 @@
   transition: height .3s ease-in-out,
               background .3s ease-in-out,
               border-radius .3s ease-in-out;
+  @include tablet-block {
+    top: auto;
+    bottom: -11px;
+  }
 }
 
 .menu__item:hover::before {
   height: 16px;
   background: var(--color-green);
   border-radius: 0 0 15px 15px;
+  @include tablet-block {
+    height: 8px;
+    border-radius: 0 0 10px 10px;
+  }
 }
 
 .menu__link {
@@ -45,5 +54,6 @@
   text-decoration: none;
   transition: color ease-in-out .150s;
   cursor: pointer;
+  @include tablet(color, var(--color-white));
 }
 

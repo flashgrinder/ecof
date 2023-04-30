@@ -60,6 +60,8 @@
 
 .block-padding-large {
 	padding: 200px 0 150px;
+	@include tablet(padding, 70px 0 100px);
+	@include mobile(padding, 50px 0 100px);
 }
 
 .block-padding-small {

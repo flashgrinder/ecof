@@ -1,9 +1,10 @@
 .burger-menu {
-    width: 20px;
-    height: 16px;
+    width: 60px;
+    height: 40px;
     cursor: pointer;
     display: none;
     align-items: center;
+    z-index: 102;
     @include tablet-block {
         display: flex;
     }
@@ -12,9 +13,9 @@
 .burger-menu__line {
     display: block;
     position: relative;
-    width: 15px;
-    height: 2px;
-    background-color: var(--color-white);
+    width: 50px;
+    height: 3px;
+    background-color: #3C4E64;
 }
 
 .burger-menu__line,
@@ -28,22 +29,22 @@
 .burger-menu__line::after {
     content: '';
     position: absolute;
-    height: 2px;
-    background: var(--color-white);
+    height: 3px;
+    background: #3C4E64;
 }
 
 .burger-menu__line::before {
     bottom: 0;
     right: 0;
-    top: 6px;
-    width: 15px;
+    top: 12px;
+    width: 50px;
 }
 
 .burger-menu__line::after {
     top: 0;
     right: 0;
-    top: -6px;
-    width: 20px;
+    top: -12px;
+    width: 60px;
 }
 
 .burger-menu.is-open .burger-menu__line {
@@ -52,7 +53,7 @@
 
 .burger-menu.is-open .burger-menu__line::before {
     top: 0;
-    width: 20px;
+    width: 60px;
     animation: rotate-burger-before .2s linear .2s forwards;
 }
 

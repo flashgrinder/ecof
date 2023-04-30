@@ -1,4 +1,5 @@
 import gsap from 'gsap';
+import burgerMenu from '../libs/modules/burger-menu';
 import sliderCards from '../libs/modules/slider-cards';
 import sliderVideo from '../libs/modules/slider-video';
 import sliderPhoto from '../libs/modules/slider-photo';
@@ -8,6 +9,8 @@ document.addEventListener('DOMContentLoaded', function(e) {
         nullTargetWarn: true,
         force3D: true
     });
+
+    burgerMenu.init();
 
     const sliderCardsSliderTrue = document.querySelector('.js-slider-cards-init');
     const sliderVideoSliderTrue = document.querySelector('.js-slider-video-init');

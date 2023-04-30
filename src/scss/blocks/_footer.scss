@@ -1,5 +1,5 @@
 .footer {
-  padding: 0 115px 50px;
+  padding-bottom: 50px;
 }
 
 .footer__body {
@@ -12,10 +12,19 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @include mobile-block {
+    flex-direction: column;
+  }
 }
 
 .footer__menu-outer {
   align-self: flex-start;
+  @include tablet(align-self, flex-end);
+}
+
+.footer__menu {
+  @include large(font-size, 18px);
+  @include tablet(display, none);
 }
 
 .footer__logo-text {
@@ -26,11 +35,26 @@
 .footer__info,
 .footer__logo-wrapper {
   padding-top: 44px;
+  text-align: center;
 }
 
 .footer__copy,
 .footer__socials{
   margin-top: 130px;
+}
+
+.footer__socials {
+  @include mobile(margin-top, 50px);
+}
+
+.footer__copy {
+  @include tablet(display, none);
+}
+
+.footer__copy.footer__copy--mobile {
+  display: none;
+  margin-top: 50px;
+  @include tablet(display, block);
 }
 
 .footer__socials {

@@ -1,6 +1,5 @@
 .header {
   position: relative;
-  padding: 0 65px;
 }
 
 .header__body {
@@ -12,20 +11,64 @@
 .header__outer {
   display: flex;
   justify-content: space-between;
+  @include tablet(padding, 20px 0);
+  @include tablet(align-items, center);
 }
 
-.header__logo {
+.header__logo,
+.header__phone {
   padding-top: 44px;
+  @include tablet(padding-top, 0);
 }
 
 .header__logo-img {
   display: block;
 }
 
-.header__phone {
-  padding-top: 44px;
-}
-
 .header__inner {
   align-self: flex-start;
+  @include tablet-block {
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    left: 0;
+    margin-top: 0;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(50px);
+    width: 100%;
+    z-index: 101;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.header__menu.menu {
+  @include large(font-size, 18px);
+  @include tablet-block {
+    font-size: 25px;
+  }
+}
+
+.header__menu-list.menu__list {
+  @include tablet-block {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.header__menu-item.menu__item {
+  @include tablet-block {
+    padding-top: 0;
+  }
+}
+
+.header__menu-item.menu__item ~ .header__menu-item.menu__item {
+  @include tablet-block {
+    margin: 50px 0 0;
+  }
 }
