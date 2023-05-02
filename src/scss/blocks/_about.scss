@@ -1,0 +1,55 @@
+.about {
+  position: relative;
+  padding: 0 0 100px;
+  @include to(1500px) {
+    padding: 0 0 90px;
+  }
+  @include to(1365px) {
+    padding: 0 0 80px;
+  }
+  @include large(padding, 0 0 70px);
+  @include tablet(padding, 0);
+}
+
+.about__outer {
+  display: grid;
+  grid-template-columns: minmax(600px, 1fr) minmax(300px, 1fr);
+  align-items: center;
+  @include tablet-block {
+    grid-template-columns: 1fr;
+    grid-gap: 50px;
+  }
+}
+
+.about__pic {
+  @include tabletSM(display, none);
+}
+
+.about__description {
+  position: relative;
+  z-index: 10;
+  @include tablet(order, -1);
+}
+
+.about__decor {
+  @include tabletSM(position, static);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.about__wave {
+  display: block;
+  width: 100%;
+  user-select: none;
+  pointer-events: none;
+}
+
+.about__wave--desctop {
+  @include tabletSM(display, none);
+}
+
+.about__wave--mobile {
+  display: none;
+  @include tabletSM(display, block);
+}

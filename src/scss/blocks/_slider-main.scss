@@ -1,5 +1,6 @@
 .slider-main {
   padding: 130px 0 50px;
+  @include large(padding, 50px 0);
 }
 
 .slider-main__swiper-slide.swiper-slide,

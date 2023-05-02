@@ -15,24 +15,24 @@
 
 .wysiwyg h2 {
   font-size: responsive 25px 30px;
-  font-range: 320px 1440px;
+  font-range: 768px 1920px;
 }
 
 .wysiwyg h3 {
   font-size: responsive 20px 25px;
-  font-range: 320px 1440px;
+  font-range: 768px 1920px;
 }
 
 .wysiwyg h4 {
   font-size: responsive 18px 20px;
-  font-range: 320px 1440px;
+  font-range: 768px 1920px;
 }
 
 .wysiwyg ul,
 .wysiwyg ol {
   padding-left: 30px;
   font-size: responsive 20px 25px;
-  font-range: 320px 1024px;
+  font-range: 768px 1920px;
   font-weight: 300;
   @include mobileXS-block {
     padding-left: 25px;
@@ -57,7 +57,7 @@
 .wysiwyg p {
   margin: 20px 0;
   font-size: responsive 20px 25px;
-  font-range: 320px 1024px;
+  font-range: 768px 1920px;
   font-weight: 300;
 }
 
