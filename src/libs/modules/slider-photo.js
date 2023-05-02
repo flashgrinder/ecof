@@ -1,4 +1,4 @@
-import Swiper, {Navigation, EffectFade} from 'swiper/core';
+import Swiper, {Navigation, EffectFade} from 'swiper';
 
 function init() {
 
@@ -13,7 +13,8 @@ function init() {
         const prevEl = item.querySelector('.js-slider-photo-prev');
 
         let sliderPicture = new Swiper(sliderImg, {
-            slidesPerView: 2,
+            slidesPerView: 1,
+            speed: 1000,
             autoHeight: true,
             centeredSlides : true,
             loop: true,

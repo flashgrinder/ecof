@@ -1,0 +1,59 @@
+{% set title = "Главная" %}
+
+{% extends "layouts/_default.html" %}
+
+{% block content %}
+
+<!-- Slider-main -->
+<section class="slider-main js-slider-main-init">
+    <div class="slider-main__body container">
+        <div class="slider-main__outer">
+            <div class="slider-main__swiper-container swiper-container js-slider-main">
+                <div class="slider-main__swiper-wrapper swiper-wrapper">
+                    
+                    <div class="slider-main__swiper-slide swiper-slide">
+                        <div class="slider-main__slide-card">
+                            <div class="slider-main__slide-info">
+                                <h2 class="slider-main__slide-title title title--huge title--black title--w-extra-bold">
+                                    Волонтёрам
+                                </h2>
+                                <div class="slider-main__slide-descr text text--large text--black text--w-light">
+                                    Сделай мир лучше, вместе с нами
+                                </div>
+                                <a href="javascript:;" class="slider-main__button button button--primary" data-modal="feedback">
+                                    Присоединяйся
+                                </a>
+                            </div>
+                            <div class="slider-main__slide-pic">
+                                <img src="img/slider-main/slide-1.svg" alt="" class="slider-main__slide-img">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-main__swiper-slide swiper-slide">
+                        <div class="slider-main__slide-card">
+                            <div class="slider-main__slide-info">
+                                <h2 class="slider-main__slide-title title title--huge title--black title--w-extra-bold">
+                                    Волонтёрам
+                                </h2>
+                                <div class="slider-main__slide-descr text text--large text--black text--w-light">
+                                    Сделай мир лучше, вместе с нами
+                                </div>
+                                <a href="javascript:;" class="slider-main__button button button--primary" data-modal="feedback">
+                                    Присоединяйся
+                                </a>
+                            </div>
+                            <div class="slider-main__slide-pic">
+                                <img src="img/slider-main/slide-1.svg" alt="" class="slider-main__slide-img">
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="slider-main__pagination swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /. Slider-main -->
+
+{% endblock %}

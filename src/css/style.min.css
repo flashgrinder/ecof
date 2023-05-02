@@ -214,17 +214,17 @@ img {
 }
 
 .title--huge {
-  font-size: calc(40px + 60 * ((100vw - 320px) / 1120));
+  font-size: calc(40px + 60 * ((100vw - 1024px) / 896));
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1920px) {
 
   .title--huge {
     font-size: 100px;
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 1024px) {
 
   .title--huge {
     font-size: 40px;
@@ -1193,6 +1193,10 @@ img {
   inset: 0;
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 
 .slider-photo__nav.slider-nav {
@@ -1965,6 +1969,66 @@ img {
   margin-top: 15px;
 }
 
+/* Slider-main */
+
+.slider-main {
+  padding: 130px 0 50px;
+}
+
+.slider-main__swiper-slide.swiper-slide,
+.slider-main__swiper-slide.swiper-slide .slider-main__slide-card {
+  height: 100%;
+}
+
+.slider-main__slide-card {
+  display: grid;
+  grid-template-columns: minmax(300px, 650px) minmax(500px, 1fr);
+  align-items: center;
+  justify-content: space-around;
+}
+
+.slider-main__slide-descr {
+  margin-top: 20px;
+}
+
+.slider-main__button {
+  margin-top: 50px;
+}
+
+.slider-main__slide-img {
+  display: block;
+}
+
+.slider-main__pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+  width: 100%;
+}
+
+.slider-main__bullet {
+  display: inline-block;
+  border-radius: 50%;
+  width: 14px;
+  height: 14px;
+  background: #D2D2D2;
+  transform: scale(1);
+  transition: border 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.slider-main__bullet:hover {
+  transform: scale(1.2);
+  background: var(--color-green);
+}
+
+.slider-main__bullet--active {
+  background: var(--color-green);
+}
+
+.slider-main__bullet ~ .slider-main__bullet {
+  margin-left: 20px;
+}
+
 /* Footer */
 
 .footer {
@@ -2234,6 +2298,16 @@ img {
 
   .contact__item-wrap {
     grid-gap: 30px;
+  }
+
+  .slider-main__slide-card {
+    grid-template-columns: 1fr;
+  }
+
+  .slider-main__slide-pic {
+    position: absolute;
+    z-index: -1;
+    opacity: 0.2;
   }
 }
 
