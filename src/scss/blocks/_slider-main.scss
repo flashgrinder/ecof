@@ -15,8 +15,18 @@
   justify-content: space-around;
   @include tabletSM-block {
     grid-template-columns: 1fr;
+    flex-direction: row;
   }
 }
+
+.slider-main__slide-info,
+.slider-main__slide-pic {
+  @include tabletSM-block {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+}
+
 
 .slider-main__slide-descr {
   margin-top: 20px;
@@ -32,7 +42,7 @@
 
 .slider-main__slide-pic {
   @include tabletSM-block {
-    position: absolute;
+    position: relative;
     z-index: -1;
     opacity: 0.2;
   }

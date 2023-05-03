@@ -2735,10 +2735,17 @@ img {
 
   .slider-main__slide-card {
     grid-template-columns: 1fr;
+    flex-direction: row;
+  }
+
+  .slider-main__slide-info,
+  .slider-main__slide-pic {
+    grid-column: 1/2;
+    grid-row: 1/2;
   }
 
   .slider-main__slide-pic {
-    position: absolute;
+    position: relative;
     z-index: -1;
     opacity: 0.2;
   }
