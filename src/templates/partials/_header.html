@@ -2,9 +2,16 @@
 <header class="header">
     <div class="header__body container">
         <div class="header__outer">
-            <a href="./" class="header__logo logo">
-                <img src="img/logo.svg" alt="" class="header__logo-img logo__img">
-            </a>
+            {% if(title == "Главная") %}
+                <a href="./" class="header__logo logo header__logo--home">
+                    <img src="img/logo-white.svg" alt="" class="header__logo-img logo__img">
+                    <img src="img/logo-bg.svg" alt="" class="header__logo-decor">
+                </a>
+            {% else %}
+                <a href="./" class="header__logo logo">
+                    <img src="img/logo.svg" alt="" class="header__logo-img logo__img">
+                </a>
+            {% endif %}
             <div class="header__inner js-menu">
                 <nav class="header__menu menu">
                     <ul class="header__menu-list menu__list">
@@ -31,9 +38,15 @@
                     </ul>
                 </nav>
             </div>
-            <a href="tel:89536383516" class="header__phone text text--medium text--black text--w-light link">
-                8 953 638 35 16
-            </a>
+            {% if(title == "Главная") %}
+                <a href="tel:89536383516" class="header__phone text text--medium text--black text--w-light link hide">
+                    8 953 638 35 16
+                </a>
+            {% else %}
+                <a href="tel:89536383516" class="header__phone text text--medium text--black text--w-light link hide-mobile">
+                    8 953 638 35 16
+                </a>
+            {% endif %}
             <div class="header__burger-menu burger-menu js-burger">
                 <span class="burger-menu__line"></span>
             </div>

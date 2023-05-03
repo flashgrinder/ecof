@@ -817,6 +817,13 @@ img {
   padding-top: 44px;
 }
 
+.header__logo--home .header__logo-decor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
 .header__logo-img {
   display: block;
 }
@@ -2764,6 +2771,14 @@ img {
     padding: 50px 0 100px;
   }
 
+  .header__logo--home .header__logo-img {
+    max-width: 140px;
+  }
+
+  .header__logo--home .header__logo-decor {
+    max-width: 70%;
+  }
+
   .top-screen__inner {
     grid-template-columns: 1fr;
     grid-gap: 45px;
@@ -2849,6 +2864,10 @@ img {
   .container-full {
     padding-left: 10px;
     padding-right: 10px;
+  }
+
+  .header__logo--home .header__logo-decor {
+    max-width: 85%;
   }
 
   .result__cards {

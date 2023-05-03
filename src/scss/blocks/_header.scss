@@ -21,6 +21,19 @@
   @include tablet(padding-top, 0);
 }
 
+.header__logo--home .header__logo-img {
+  @include mobile(max-width, 140px);
+}
+
+.header__logo--home .header__logo-decor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  @include mobile(max-width, 70%);
+  @include mobileXS(max-width, 85%);
+}
+
 .header__logo-img {
   display: block;
 }
