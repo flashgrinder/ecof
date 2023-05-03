@@ -2140,7 +2140,8 @@ img {
 .slider-main__pagination {
   display: flex;
   justify-content: center;
-  margin-top: 25px;
+  margin-top: 50px;
+  margin-bottom: 20px;
   width: 100%;
 }
 
@@ -2160,6 +2161,7 @@ img {
 }
 
 .slider-main__bullet--active {
+  transform: scale(1.2);
   background: var(--color-green);
 }
 

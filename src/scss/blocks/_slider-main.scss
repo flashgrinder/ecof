@@ -41,7 +41,8 @@
 .slider-main__pagination {
   display: flex;
   justify-content: center;
-  margin-top: 25px;
+  margin-top: 50px;
+  margin-bottom: 20px;
   width: 100%;
 }
 
@@ -51,7 +52,6 @@
   width: 14px;
   height: 14px;
   background: #D2D2D2;
-  //border: 1px solid var(--color-white-low-45);
   transform: scale(1);
   transition: border .2s ease-in-out, transform .2s ease-in-out;
 }
@@ -63,6 +63,7 @@
 }
 
 .slider-main__bullet--active {
+  transform: scale(1.2);
   background: var(--color-green);;
 }
 
