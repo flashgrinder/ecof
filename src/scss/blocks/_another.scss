@@ -1,3 +1,17 @@
+.another.another--main-page .another__items {
+  transform: translateY(185px);
+  //max-width: 1250px;
+  margin: 0 auto;
+  flex-wrap: nowrap;
+  grid-gap: 20px;
+  @include tablet(transform, translateY(60px));
+}
+
+.another--mobile {
+  display: none;
+  @include tabletSM(display, block);
+}
+
 .another__items {
   display: flex;
   grid-gap: 100px;
@@ -14,6 +28,12 @@
   align-items: center;
   text-decoration: none;
   text-align: center;
+  transform: scale(1);
+  transition: transform .3s ease-in-out;
+}
+
+.another__item:hover {
+  transform: scale(1.1);
 }
 
 .another__icon {
@@ -22,9 +42,21 @@
   justify-content: center;
   padding: 30px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  background: var(--color-white);
   border-radius: 50%;
   width: 136px;
   height: 136px;
+}
+
+.another__img-icon {
+  transform: scale(0.8);
+  filter: grayscale(1);
+  transition: transform .3s ease-in-out, filter .3s ease-in-out;
+}
+
+.another__item:hover .another__img-icon {
+  transform: scale(1);
+  filter: grayscale(0);
 }
 
 .another__title {

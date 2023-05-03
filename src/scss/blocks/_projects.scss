@@ -1,0 +1,50 @@
+.projects {
+  padding: 54px 0 62px;
+  background: linear-gradient(180deg, #8CDDFF 0%, #E4F7FF 100%), #FAEDD9;;
+}
+
+.projects__tabs {
+  background: var(--color-white);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+  padding: 40px 120px 120px;
+  @include tablet(padding, 40px 100px 0);
+  @include tabletSM(display, none);
+}
+
+//.projects__tabs-content {
+//}
+
+.projects__card {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-gap: 20px;
+  @include tablet-block {
+    grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+  }
+}
+
+.projects__wrap-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.projects__img {
+  display: block;
+  margin: 0 auto;
+  @include tabletSM(max-width, 300px);
+}
+
+.projects__info {
+  margin-top: auto;
+  @include tablet(margin-top, 50px);
+}
+
+.projects__action {
+  margin-top: 50px;
+}
+
+.projects__button {
+  padding: 15px 50px;
+}

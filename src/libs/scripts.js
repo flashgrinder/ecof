@@ -1,6 +1,7 @@
 import gsap from 'gsap';
 import burgerMenu from '../libs/modules/burger-menu';
 import modal from '../libs/modules/modal';
+import tabs from '../libs/modules/tabs';
 import sliderMain from '../libs/modules/slider-main';
 import sliderTeam from '../libs/modules/slider-team';
 import sliderCards from '../libs/modules/slider-cards';
@@ -20,6 +21,9 @@ document.addEventListener('DOMContentLoaded', function(e) {
     const sliderTeamSliderTrue = document.querySelector('.js-slider-team-init');
     sliderMainSliderTrue ? sliderMain.init() : false;
     sliderTeamSliderTrue ? sliderTeam.init() : false;
+
+    const tabsTrue = document.querySelector('.js-tabs-init');
+    tabsTrue ? tabs.init() : false;
 
     const sliderCardsSliderTrue = document.querySelector('.js-slider-cards-init');
     const sliderVideoSliderTrue = document.querySelector('.js-slider-video-init');
