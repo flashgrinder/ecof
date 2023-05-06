@@ -3,9 +3,12 @@
   @include large(padding, 50px 0);
 }
 
-.slider-main__swiper-slide.swiper-slide,
-.slider-main__swiper-slide.swiper-slide .slider-main__slide-card {
+.slider-main__swiper-slide.swiper-slide {
   height: 100%;
+}
+
+.slider-main__swiper-slide.swiper-slide .slider-main__slide-card {
+  height: auto;
 }
 
 .slider-main__slide-card {

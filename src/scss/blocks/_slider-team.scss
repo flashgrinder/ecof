@@ -13,9 +13,12 @@
   }
 }
 
-.slider-team__swiper-slide.swiper-slide,
-.slider-team__swiper-slide.swiper-slide .slider-team__card{
+.slider-team__swiper-slide.swiper-slide{
   height: 100%;
+}
+
+.slider-team__swiper-slide.swiper-slide .slider-team__card{
+  height: auto;
 }
 
 .slider-team__card {
