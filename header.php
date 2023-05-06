@@ -11,7 +11,7 @@
 <header class="header">
     <div class="header__body container">
         <div class="header__outer">
-            <?php if( is_home() ): ?>
+            <?php if( is_front_page() ): ?>
             <a href="<?= home_url(); ?>" class="header__logo logo header__logo--home">
                 <img src="<?= STANDART_DIR; ?>img/logo-white.svg" alt="" class="header__logo-img logo__img">
                 <img src="<?= STANDART_DIR; ?>img/logo-bg.svg" alt="" class="header__logo-decor">
@@ -32,7 +32,7 @@
                     ]);
                 ?>
             </div>
-            <?php if( !is_home() ): ?>
+            <?php if( !is_front_page() ): ?>
                 <a href="tel:89536383516" class="header__phone text text--medium text--black text--w-light link hide-mobile">
                     8 953 638 35 16
                 </a>

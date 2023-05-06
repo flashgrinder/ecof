@@ -2,7 +2,7 @@
 <!-- /. MAIN -->
 
 <?php wp_footer(); ?>
-<footer class="footer <?= ( is_home() ) ? 'bg--light-blue' : 'bg--white'; ?>">
+<footer class="footer <?= ( is_front_page() ) ? 'bg--light-blue' : 'bg--white'; ?>">
     <div class="footer__body container">
         <div class="footer__inner">
             <div class="footer__logo-wrapper">
