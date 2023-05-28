@@ -1,0 +1,533 @@
+<?php /* Template Name: ECOProf */?>
+<?php get_header(); ?>
+
+<?php the_post(); ?>
+<!-- Top-screen -->
+<section class="top-screen block-padding-large">
+    <div class="top-screen__body container">
+        <div class="top-screen__inner">
+            <div class="top-screen__text">
+                <h1 class="top-screen__heading title title--big title--black title--w-bold">
+                    <?php the_title(); ?>
+                </h1>
+                <h2 class="top-screen__subheading title title--large title--black title--w-bold">
+                    <?php the_field('subtitle'); ?>
+                </h2>
+                <p class="top-screen__descr text text--large text--black text--w-light">
+                    <?php the_excerpt(); ?>
+                </p>
+                <div class="top-screen__actions">
+                    <a href="javascript:;" class="top-screen__btn button button--primary" data-modal="#feedback">
+                        Присоединиться
+                    </a>
+                </div>
+            </div>
+            <div class="top-screen__pic">
+                <?php
+                    $default_attr = [
+                        'class'	=> "top-screen__img",
+                        'alt'   => get_the_title()
+                    ];
+
+                    echo get_the_post_thumbnail( $post->ID, 'full', $default_attr );
+                ?>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /. Top-screen-->
+
+<!-- Plunks -->
+<section class="plunks block-padding-small">
+    <div class="plunks__body container">
+        <h2 class="plunks__heading title title--medium title--black title--w-bold title--indent center">
+            Для детей и их родителей
+        </h2>
+        <!-- Wysiwyg -->
+        <div class="plunks__wysiwyg wysiwyg center">
+            <p>
+                Мы формируем экологическую культуру и навыки для разработки проектов, позволяющих сберечь и приумножить природные ресурсы для будущих поколений
+            </p>
+        </div>
+        <!-- /. Wysiwyg -->
+    </div>
+</section>
+<!-- /. Plunks-->
+
+<!-- Text-plunk -->
+<div class="text-plunk block-padding-small bg--blue">
+    <div class="text-plunk__body container">
+        <div class="text-plunk__icon center">
+            <img src="<?= STANDART_DIR; ?>img/an-pic/text-plunk-icon.svg" alt="" class="text-plunk__img">
+        </div>
+        <p class="text-plunk__desc text text--large text--white text--w-light center">
+            Участники знакомятся с такими понятиями, как социальное
+            <br>предпринимательство, осознанное потребление,
+            <br>устойчивое развитие.
+        </p>
+    </div>
+</div>
+<!-- /. Text-plunk -->
+
+<!-- Slider-cards -->
+<section class="slider-cards js-slider-cards-init block-padding-small">
+    <div class="slider-cards__body container">
+        <h2 class="slider-cards__heading title title--medium title--black title--w-bold title--indent center">
+            Какие задачи решает проект?
+        </h2>
+        <div class="slider-cards__outer js-slider-cards-outer">
+            <div class="slider-cards__swiper-container swiper-container js-slider-cards">
+                <div class="slider-cards__swiper-wrapper swiper-wrapper">
+
+                    <div class="slider-cards__swiper-slide swiper-slide">
+                        <article class="plunk">
+                            <div class="plunk__icon">
+                                <img src="<?= STANDART_DIR; ?>img/slider-cards/task-1.svg" alt="" class="plunk__img-icon">
+                            </div>
+                            <p class="plunk__text text text--normal text--black text--w-light center">
+                                Популяризация идей устойчивого развития среди школьников среднего и старшего возраста, студентов
+                            </p>
+                        </article>
+                    </div>
+                    <div class="slider-cards__swiper-slide swiper-slide">
+                        <article class="plunk">
+                            <div class="plunk__icon">
+                                <img src="<?= STANDART_DIR; ?>img/slider-cards/task-2.svg" alt="" class="plunk__img-icon">
+                            </div>
+                            <p class="plunk__text text text--normal text--black text--w-light center">
+                                Формирование осознанного образа жизни у подрастающего поколения
+                            </p>
+                        </article>
+                    </div>
+                    <div class="slider-cards__swiper-slide swiper-slide">
+                        <article class="plunk">
+                            <div class="plunk__icon">
+                                <img src="<?= STANDART_DIR; ?>img/slider-cards/task-3.svg" alt="" class="plunk__img-icon">
+                            </div>
+                            <p class="plunk__text text text--normal text--black text--w-light center">
+                                Развитие навыков проектной деятельности
+                            </p>
+                        </article>
+                    </div>
+                    <div class="slider-cards__swiper-slide swiper-slide">
+                        <article class="plunk">
+                            <div class="plunk__icon">
+                                <img src="<?= STANDART_DIR; ?>img/slider-cards/task-4.svg" alt="" class="plunk__img-icon">
+                            </div>
+                            <p class="plunk__text text text--normal text--black text--w-light center">
+                                Опыт эффективного взаимодействия с представителями государства и бизнеса
+                            </p>
+                        </article>
+                    </div>
+                    <div class="slider-cards__swiper-slide swiper-slide">
+                        <article class="plunk">
+                            <div class="plunk__icon">
+                                <img src="<?= STANDART_DIR; ?>img/slider-cards/task-5.svg" alt="" class="plunk__img-icon">
+                            </div>
+                            <p class="plunk__text text text--normal text--black text--w-light center">
+                                Практика самопрезентации и успешного выступления
+                            </p>
+                        </article>
+                    </div>
+                    <div class="slider-cards__swiper-slide swiper-slide">
+                        <article class="plunk">
+                            <div class="plunk__icon">
+                                <img src="<?= STANDART_DIR; ?>img/slider-cards/task-6.svg" alt="" class="plunk__img-icon">
+                            </div>
+                            <p class="plunk__text text text--normal text--black text--w-light center">
+                                Развитие предпринимательского мышления: стартап, который не нанесет ущерб природе
+                            </p>
+                        </article>
+                    </div>
+                    <div class="slider-cards__swiper-slide swiper-slide">
+                        <article class="plunk">
+                            <div class="plunk__icon">
+                                <img src="<?= STANDART_DIR; ?>img/slider-cards/task-7.svg" alt="" class="plunk__img-icon">
+                            </div>
+                            <p class="plunk__text text text--normal text--black text--w-light center">
+                                Умение четко видеть экологический след человеческой деятельности
+                            </p>
+                        </article>
+                    </div>
+                    <div class="slider-cards__swiper-slide swiper-slide">
+                        <article class="plunk">
+                            <div class="plunk__icon">
+                                <img src="<?= STANDART_DIR; ?>img/slider-cards/task-8.svg" alt="" class="plunk__img-icon">
+                            </div>
+                            <p class="plunk__text text text--normal text--black text--w-light center">
+                                Обучение технологиям слаженной работы в команде
+                            </p>
+                        </article>
+                    </div>
+                    <div class="slider-cards__swiper-slide swiper-slide">
+                        <article class="plunk">
+                            <div class="plunk__icon">
+                                <img src="<?= STANDART_DIR; ?>img/slider-cards/task-9.svg" alt="" class="plunk__img-icon">
+                            </div>
+                            <p class="plunk__text text text--normal text--black text--w-light center">
+                                Применение целей устойчивого развития в повседневной жизни
+                            </p>
+                        </article>
+                    </div>
+                    <div class="slider-cards__swiper-slide swiper-slide">
+                        <article class="plunk">
+                            <div class="plunk__icon">
+                                <img src="<?= STANDART_DIR; ?>img/slider-cards/task-10.svg" alt="" class="plunk__img-icon">
+                            </div>
+                            <p class="plunk__text text text--normal text--black text--w-light center">
+                                Экопросвещение через систему наставничества
+                            </p>
+                        </article>
+                    </div>
+
+                </div>
+            </div>
+            <div class="slider-cards__nav slider-nav">
+                <div class="slider-cards__swiper-button-prev slider-cards__slider-arrow js-slider-cards-prev slider-nav__arrow slider-nav__arrow--prev">
+                    <svg class="slider-cards__slider-arrow-svg slider-nav__arrow-svg" width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 1L1.82588 4.75671C1.3845 5.15395 1.3845 5.84605 1.82588 6.24329L6 10" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </div>
+                <div class="slider-cards__swiper-button-next slider-cards__slider-arrow js-slider-cards-next slider-nav__arrow slider-nav__arrow--next">
+                    <svg class="slider-cards__slider-arrow-svg slider-nav__arrow-svg" width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L5.17412 4.75671C5.6155 5.15395 5.6155 5.84605 5.17412 6.24329L1 10" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /. Slider-cards -->
+
+<!-- Slider-cards -->
+<section class="slider-cards js-slider-cards-init block-padding-small bg--light-blue">
+    <div class="slider-cards__body container">
+        <h2 class="slider-cards__heading title title--medium title--black title--w-bold title--indent center">
+            Мероприятия ECOprof:
+        </h2>
+        <div class="slider-cards__outer js-slider-cards-outer">
+            <div class="slider-cards__swiper-container swiper-container js-slider-cards">
+                <div class="slider-cards__swiper-wrapper swiper-wrapper">
+
+                    <div class="slider-cards__swiper-slide swiper-slide">
+                        <article class="plunk">
+                            <div class="plunk__icon">
+                                <img src="<?= STANDART_DIR; ?>img/slider-cards/ev-1.svg" alt="" class="plunk__img-icon">
+                            </div>
+                            <p class="plunk__text text text--normal text--black text--w-light center">
+                                Серии обучающих лекций
+                            </p>
+                        </article>
+                    </div>
+                    <div class="slider-cards__swiper-slide swiper-slide">
+                        <article class="plunk">
+                            <div class="plunk__icon">
+                                <img src="<?= STANDART_DIR; ?>img/slider-cards/ev-2.svg" alt="" class="plunk__img-icon">
+                            </div>
+                            <p class="plunk__text text text--normal text--black text--w-light center">
+                                Разработка собственного проекта
+                            </p>
+                        </article>
+                    </div>
+                    <div class="slider-cards__swiper-slide swiper-slide">
+                        <article class="plunk">
+                            <div class="plunk__icon">
+                                <img src="<?= STANDART_DIR; ?>img/slider-cards/ev-3.svg" alt="" class="plunk__img-icon">
+                            </div>
+                            <p class="plunk__text text text--normal text--black text--w-light center">
+                                Экскурсии на предприятия, экологические производства, комплексы по переработке и сортировке отходов
+                            </p>
+                        </article>
+                    </div>
+                    <div class="slider-cards__swiper-slide swiper-slide">
+                        <article class="plunk">
+                            <div class="plunk__icon">
+                                <img src="<?= STANDART_DIR; ?>img/slider-cards/ev-4.svg" alt="" class="plunk__img-icon">
+                            </div>
+                            <p class="plunk__text text text--normal text--black text--w-light center">
+                                Квесты, настольные игры
+                            </p>
+                        </article>
+                    </div>
+                    <div class="slider-cards__swiper-slide swiper-slide">
+                        <article class="plunk">
+                            <div class="plunk__icon">
+                                <img src="<?= STANDART_DIR; ?>img/slider-cards/ev-5.svg" alt="" class="plunk__img-icon">
+                            </div>
+                            <p class="plunk__text text text--normal text--black text--w-light center">
+                                Защита проекта перед менторским советом
+                            </p>
+                        </article>
+                    </div>
+                    <div class="slider-cards__swiper-slide swiper-slide">
+                        <article class="plunk">
+                            <div class="plunk__icon">
+                                <img src="<?= STANDART_DIR; ?>img/slider-cards/ev-6.svg" alt="" class="plunk__img-icon">
+                            </div>
+                            <p class="plunk__text text text--normal text--black text--w-light center">
+                                Возможность найти инвесторов и монетизировать проект
+                            </p>
+                        </article>
+                    </div>
+                    <div class="slider-cards__swiper-slide swiper-slide">
+                        <article class="plunk">
+                            <div class="plunk__icon">
+                                <img src="<?= STANDART_DIR; ?>img/slider-cards/ev-7.svg" alt="" class="plunk__img-icon">
+                            </div>
+                            <p class="plunk__text text text--normal text--black text--w-light center">
+                                Встречи единомышленников
+                            </p>
+                        </article>
+                    </div>
+
+                </div>
+            </div>
+            <div class="slider-cards__nav slider-nav">
+                <div class="slider-cards__swiper-button-prev slider-cards__slider-arrow js-slider-cards-prev slider-nav__arrow slider-nav__arrow--prev">
+                    <svg class="slider-cards__slider-arrow-svg slider-nav__arrow-svg" width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 1L1.82588 4.75671C1.3845 5.15395 1.3845 5.84605 1.82588 6.24329L6 10" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </div>
+                <div class="slider-cards__swiper-button-next slider-cards__slider-arrow js-slider-cards-next slider-nav__arrow slider-nav__arrow--next">
+                    <svg class="slider-cards__slider-arrow-svg slider-nav__arrow-svg" width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L5.17412 4.75671C5.6155 5.15395 5.6155 5.84605 5.17412 6.24329L1 10" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /. Slider-cards -->
+
+<!-- Format -->
+<section class="format block-padding-small">
+    <div class="format__body container">
+        <h2 class="format__heading title title--medium title--black title--w-bold title--indent center">
+            Формат организации мероприятия
+        </h2>
+        <div class="format__items">
+            <div class="format__item">
+                <div class="format__icon">
+                    <img src="<?= STANDART_DIR; ?>img/an-pic/format-1.svg" alt="" class="format__img-icon">
+                </div>
+                <p class="format__text text text--large text--black text--w-light center">
+                    Сочетание двух форм взаимодействия:
+                </p>
+                <div class="format__icon format__icon--root">
+                    <img src="<?= STANDART_DIR; ?>img/an-pic/format-root.svg" alt="" class="format__img-icon">
+                </div>
+                <div class="format__item-cards">
+                    <!-- Result-card -->
+                    <div class="result-card">
+                        <p class="result-card__text text text--normal text--black text--w-light center">
+                            Готовый план реализации проекта и его успешная презентация перед менторским советом
+                        </p>
+                    </div>
+                    <!-- /. Result-card -->
+                    <!-- Result-card -->
+                    <div class="result-card">
+                        <p class="result-card__text text text--normal text--black text--w-light center">
+                            Приобретение навыков в сфере экологического предпринимательства
+                        </p>
+                    </div>
+                    <!-- /. Result-card -->
+                </div>
+            </div>
+            <div class="format__item">
+                <div class="format__icon">
+                    <img src="<?= STANDART_DIR; ?>img/an-pic/format-2.svg" alt="" class="format__img-icon">
+                </div>
+                <p class="format__text text text--large text--black text--w-light center">
+                    Команды сформированы из учащихся общеобразовательных учреждений Саратовской области с 6 по 11 класс.
+                </p>
+            </div>
+            <div class="format__item">
+                <div class="format__icon">
+                    <img src="<?= STANDART_DIR; ?>img/an-pic/format-3.svg" alt="" class="format__img-icon">
+                </div>
+                <p class="format__text text text--large text--black text--w-light center">
+                    Наставники в командах – студенты ВУЗов
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /. Format -->
+
+<!-- Result -->
+<section class="result block-padding-small">
+    <div class="result__body container">
+        <h2 class="result__heading title title--medium title--black title--w-bold title--indent center">
+            Результаты участия в проекте
+        </h2>
+        <div class="result__cards">
+            <!-- Result-card -->
+            <div class="result-card">
+                <p class="result-card__text text text--normal text--black text--w-light center">
+                    Готовый план реализации проекта и его успешная презентация перед менторским советом
+                </p>
+            </div>
+            <!-- /. Result-card -->
+            <!-- Result-card -->
+            <div class="result-card">
+                <p class="result-card__text text text--normal text--black text--w-light center">
+                    Приобретение навыков в сфере экологического предпринимательства
+                </p>
+            </div>
+            <!-- /. Result-card -->
+            <!-- Result-card -->
+            <div class="result-card">
+                <p class="result-card__text text text--normal text--black text--w-light center">
+                    Поддержка проекта на дальнейших этапах
+                </p>
+            </div>
+            <!-- /. Result-card -->
+            <!-- Result-card -->
+            <div class="result-card">
+                <p class="result-card__text text text--normal text--black text--w-light center">
+                    Диплом и сертификат о прохождении программы
+                </p>
+            </div>
+            <!-- /. Result-card -->
+            <!-- Result-card -->
+            <div class="result-card">
+                <p class="result-card__text text text--normal text--black text--w-light center">
+                    Призы и подарки от партнеров проекта
+                </p>
+            </div>
+            <!-- /. Result-card -->
+            <!-- Result-card -->
+            <div class="result-card">
+                <p class="result-card__text text text--normal text--black text--w-light center">
+                    Причастность к сообществу единомышленников
+                </p>
+            </div>
+            <!-- /. Result-card -->
+        </div>
+    </div>
+</section>
+<!-- /. Result-->
+
+<!-- Invite -->
+<section class="invite block-padding-small  bg--light-blue ">
+    <div class="invite__body container">
+        <h2 class="invite__heading title title--medium title--black title--w-bold title--indent center">
+            Присоединяйся к ECOprof
+        </h2>
+        <p class="invite__description text text--large text--black text--w-light center">
+            Заполняй заявку и участвуй в лучших мероприятиях
+        </p>
+        <div class="invite__action center">
+            <a href="javascript:;" class="invite__btn button button--primary" data-modal="#feedback">
+                Присоединиться
+            </a>
+        </div>
+    </div>
+</section>
+<!-- /. Invite-->
+
+<!-- Partners-->
+<section class="partners block-padding-small">
+    <div class="partners__body container">
+        <h2 class="partners__heading title title--medium title--black title--w-bold title--indent center">
+            Наши партнёры
+        </h2>
+        <div class="partners__outer">
+            <img src="<?= STANDART_DIR; ?>img/an-pic/root-partners.svg" alt="" class="partners__root center">
+            <div class="partners__cards">
+                <!-- Result-card -->
+                <div class="result-card">
+                    <p class="result-card__text text text--normal text--black text--w-light center">
+                        Органы государственной и муниципальной власти, образовательные организации
+                    </p>
+                </div>
+                <!-- /. Result-card -->
+                <!-- Result-card -->
+                <div class="result-card">
+                    <p class="result-card__text text text--normal text--black text--w-light center">
+                        Региональные операторы по обращению с коммунальными отходами
+                    </p>
+                </div>
+                <!-- /. Result-card -->
+                <!-- Result-card -->
+                <div class="result-card">
+                    <p class="result-card__text text text--normal text--black text--w-light center">
+                        Социально ориентированный бизнес
+                    </p>
+                </div>
+                <!-- /. Result-card -->
+            </div>
+        </div>
+        <div class="partners__logos">
+            <div class="partners__logo">
+                <img src="<?= STANDART_DIR; ?>img/partners/voir.png" alt="" class="partners__img-logo">
+            </div>
+            <div class="partners__logo">
+                <img src="<?= STANDART_DIR; ?>img/partners/pg.png" alt="" class="partners__img-logo">
+            </div>
+            <div class="partners__logo">
+                <img src="<?= STANDART_DIR; ?>img/partners/owc.png" alt="" class="partners__img-logo">
+            </div>
+            <div class="partners__logo">
+                <img src="<?= STANDART_DIR; ?>img/partners/fcd.png" alt="" class="partners__img-logo">
+            </div>
+            <div class="partners__logo">
+                <img src="<?= STANDART_DIR; ?>img/partners/fcg.png" alt="" class="partners__img-logo">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /. Partners-->
+
+<!-- Steps -->
+<section class="steps block-padding-small">
+    <div class="steps__body container">
+        <h2 class="steps__heading title title--medium title--black title--w-bold title--indent center">
+            ECOprof для вашей компании это:
+        </h2>
+        <div class="steps__items">
+            <div class="steps__item">
+                <div class="steps__num">
+                    1
+                </div>
+                <p class="steps__text text text--normal text--black text--w-light center">
+                    Быть проводником устойчивого развития — ваше репутационное преимущество
+                </p>
+            </div>
+            <div class="steps__item">
+                <div class="steps__num">
+                    2
+                </div>
+                <p class="steps__text text text--normal text--black text--w-light center">
+                    Развитие в сфере корпоративного социального партнерства — международный знак качества
+                </p>
+            </div>
+            <div class="steps__item">
+                <div class="steps__num">
+                    3
+                </div>
+                <p class="steps__text text text--normal text--black text--w-light center">
+                    Нестандартное решение задач в области корпоративной социальной ответственности
+                </p>
+            </div>
+            <div class="steps__item">
+                <div class="steps__num">
+                    4
+                </div>
+                <p class="steps__text text text--normal text--black text--w-light center">
+                    Экостратегия — инструмент продвижения имиджа организации и фактор роста лояльности к компании
+                </p>
+            </div>
+        </div>
+        <div class="steps__action center">
+            <div class="steps__btn button button--primary">
+                Стать партнёром
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /. Steps -->
+
+<?php get_template_part( 'template-parts/template', 'another'); ?>
+
+<?php get_footer(); ?>

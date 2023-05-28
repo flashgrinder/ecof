@@ -2,7 +2,7 @@
 <!-- /. MAIN -->
 
 <?php wp_footer(); ?>
-<footer class="footer <?= ( is_front_page() ) ? 'bg--light-blue' : 'bg--white'; ?>">
+<footer class="footer <?= ( is_front_page() || is_home() || is_page('ЭКОклуб') || is_single() ) ? 'bg--light-blue' : 'bg--white'; ?>">
     <div class="footer__body container">
         <div class="footer__inner">
             <div class="footer__logo-wrapper">
@@ -65,34 +65,7 @@
             <h3 class="modal__title title title--small title--dark title--w-medium center">
                 Оставить заявку
             </h3>
-            <div class="wpcf7">
-                <form action="" class="modal__form invalid wpcf7-form">
-                    <div class="modal__field">
-                        <input type="text" class="modal__input" placeholder="Ваше имя">
-                    </div>
-                    <div class="modal__field">
-                        <input type="email" class="modal__input" placeholder="Ваше Email">
-                    </div>
-                    <div class="modal__field">
-                        <input type="tel" class="modal__input" placeholder="Ваш телефон">
-                    </div>
-                    <div class="modal__wrap-policy">
-                        <div class="modal__policy text text--small text--black text--w-light center">
-                            Ваши данные находятся под защитой
-                        </div>
-                        <a href="https://fcdigital.ru/politika-konfidenczialnosti/" class="modal__link-policy text text--black text--small text--w-light center link" target="_blank">
-                            Политика конфиденциальности
-                        </a>
-                    </div>
-                    <div class="modal__actions">
-                        <input type="button" value="Отправить" class="modal__btn button button--primary button--small">
-                        <span class="wpcf7-spinner"></span>
-                    </div>
-                    <div class="wpcf7-response-output" aria-hidden="true">
-                        Одно или несколько полей содержат ошибочные данные. Пожалуйста, проверьте их и попробуйте ещё раз.
-                    </div>
-                </form>
-            </div>
+            <?php echo do_shortcode('[contact-form-7 id="48" title="Форма обратной связи" html_class="modal__form"]'); ?>
         </div>
     </div>
 </div>

@@ -204,11 +204,10 @@
 }
 
 .modal .wpcf7 form.sent .wpcf7-response-output {
-  border-color: var(--color-green-light);
+  border-color: var(--color-green);
 }
 
 .modal__form .wpcf7-not-valid-tip {
-  display: none;
   text-align: center;
   font-family: var(--font-inter);
   font-size: 12px;
@@ -216,9 +215,7 @@
   color: var(--color-invalid);
   position: absolute;
   width: 100%;
-  bottom: -37px;
-  left: 50%;
-  transform: translateX(-50%);
+  top: -45px;
 }
 
 /* Succes */
