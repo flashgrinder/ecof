@@ -40,16 +40,7 @@
 <!-- Plunks -->
 <section class="plunks block-padding-small">
     <div class="plunks__body container">
-        <h2 class="plunks__heading title title--medium title--black title--w-bold title--indent center">
-            Активности ЭКОклуб
-        </h2>
-        <!-- Wysiwyg -->
-        <div class="plunks__wysiwyg wysiwyg center">
-            <p>
-                Участие во всех мероприятиях ECOclub бесплатное!
-            </p>
-        </div>
-        <!-- /. Wysiwyg -->
+        <?php get_template_part( 'template-parts/template', 'wysiwyg'); ?>
         <div class="plunks__items">
             <!-- Plunk -->
             <article class="plunk">

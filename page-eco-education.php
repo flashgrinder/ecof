@@ -40,19 +40,7 @@
 <!-- Plunks -->
 <section class="plunks block-padding-small">
     <div class="plunks__body container">
-        <h2 class="plunks__heading title title--medium title--black title--w-bold title--indent center">
-            Уроки
-        </h2>
-        <!-- Wysiwyg -->
-        <div class="plunks__wysiwyg wysiwyg center">
-            <p>
-                ЭКОурок — занятие в игровой форме для детей школьного и дошкольного возраста, рассчитанное на один академический час (45 минут). На уроках мы совмещаем теорию с практикой, смотрим обучающие ролики, проходим тесты и викторины.
-            </p>
-            <p>
-                Курс ЭКОуроков включает в себя 4 основные темы:
-            </p>
-        </div>
-        <!-- /. Wysiwyg -->
+        <?php get_template_part( 'template-parts/template', 'wysiwyg'); ?>
         <div class="plunks__items">
             <!-- Plunk -->
             <article class="plunk">
@@ -283,28 +271,35 @@
         <div class="slider-video__outer">
             <div class="slider-video__swiper-container swiper-container js-slider-video">
                 <div class="slider-video__swiper-wrapper swiper-wrapper">
+                <?php if (have_rows('video-slider')) : ?>
+                    <?php while (have_rows('video-slider')) : the_row();
 
-                    <div class="slider-video__swiper-slide swiper-slide">
-                        <div class="slider-video__slide-inner">
-                            <div class="slider-video__wrapper">
-                                <iframe src="https://www.youtube.com/embed/vX_4I16QhyA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    $video_slider_link = get_sub_field('video_slider_link');
+
+                    ?>
+                        <div class="slider-video__swiper-slide swiper-slide">
+                            <div class="slider-video__slide-inner">
+                                <div class="slider-video__wrapper">
+                                    <iframe src="<?= $video_slider_link; ?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="slider-video__swiper-slide swiper-slide">
-                        <div class="slider-video__slide-inner">
-                            <div class="slider-video__wrapper">
-                                <iframe src="https://www.youtube.com/embed/u1XJMCamAR0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slider-video__swiper-slide swiper-slide">
-                        <div class="slider-video__slide-inner">
-                            <div class="slider-video__wrapper">
-                                <iframe src="https://www.youtube.com/embed/sNJxvz9KU3A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                            </div>
-                        </div>
-                    </div>
+                    <?php endwhile; ?>
+                <?php endif; ?>
+<!--                    <div class="slider-video__swiper-slide swiper-slide">-->
+<!--                        <div class="slider-video__slide-inner">-->
+<!--                            <div class="slider-video__wrapper">-->
+<!--                                <iframe src="https://www.youtube.com/embed/u1XJMCamAR0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="slider-video__swiper-slide swiper-slide">-->
+<!--                        <div class="slider-video__slide-inner">-->
+<!--                            <div class="slider-video__wrapper">-->
+<!--                                <iframe src="https://www.youtube.com/embed/sNJxvz9KU3A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
 
                 </div>
             </div>

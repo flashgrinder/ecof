@@ -40,14 +40,7 @@
 <!-- Plunks -->
 <section class="plunks block-padding-small">
     <div class="plunks__body container">
-        <!-- Wysiwyg -->
-        <div class="plunks__wysiwyg wysiwyg center">
-            <p>
-                За 4 года в мероприятиях приняло участие более 300 волонтеров из 10 городов. Самые активные участники проекта получают благодарственные письма, им зачисляются волонтерские часы для портфолио, выдаются сертификаты и приглашения на мастер-классы, лекции.
-                Наши волонтеры являются участниками крупнейших федеральных форумов, таких как #МЫВМЕСТЕ, ПМЭФ, Конгресс молодых ученых и др., а также их приглашают на стажировки партнеры проекта.
-            </p>
-        </div>
-        <!-- /. Wysiwyg -->
+        <?php get_template_part( 'template-parts/template', 'wysiwyg'); ?>
     </div>
 </section>
 <!-- /. Plunks-->
@@ -56,16 +49,12 @@
 <section class="features block-padding-small">
     <div class="features__body container">
         <h2 class="features__heading title title--medium title--black title--w-bold title--indent center">
-
             Виды волонтерства
-
         </h2>
         <div class="features__items">
             <div class="features__card">
                 <h4 class="features__card-title text text--medium text--white text--w-medium">
-
                     Волонтеры науки и техники
-
                 </h4>
                 <p class="features__text-card text text--normal text--white text--w-light">
                     Любишь изобретать, вычислять, анализировать? Являешься студентом технического вуза? Мы расскажем о твоих изобретениях не только в наших социальных сетях, но и поможем привлечь партнеров. Мы сотрудничаем с Всероссийским обществом изобретателей и рационализаторов
@@ -74,9 +63,7 @@
             </div>
             <div class="features__card">
                 <h4 class="features__card-title text text--medium text--white text--w-medium">
-
                     Просвещение
-
                 </h4>
                 <p class="features__text-card text text--normal text--white text--w-light">
                     Помощь волонтеров на ЭКОуроках и обучающих лекциях очень важна. Мы уделяем внимание каждому слушателю, для этого подключаем волонтеров к активному участию в ЭКОуроках. Подготовить реквизиты, настроить технику, показать материалы всему классу помогают
@@ -85,9 +72,7 @@
             </div>
             <div class="features__card">
                 <h4 class="features__card-title text text--medium text--white text--w-medium">
-
                     Творчество
-
                 </h4>
                 <p class="features__text-card text text--normal text--white text--w-light">
                     Знаешь, как подарить испорченной вещи вторую жизнь? На наших мастер-классах мы не только помогаем планете, но и развиваем творческие навыки. Из чего угодно можно сделать что угодно, если включить фантазию! Предлагай идею своего мастер-класса, зови друзей,
@@ -96,9 +81,7 @@
             </div>
             <div class="features__card">
                 <h4 class="features__card-title text text--medium text--white text--w-medium">
-
                     Медиа-волонтеры
-
                 </h4>
                 <p class="features__text-card text text--normal text--white text--w-light">
                     Любишь фотографировать и снимать видеоролики? Хочешь попробовать себя в блогинге и SMM? Мы ждем тебя! Наша команда поможет выбрать интересное направление в сфере экологии и подскажет, как себя реализовать в этом направлении. Выбор за тобой!
@@ -106,9 +89,7 @@
             </div>
             <div class="features__card">
                 <h4 class="features__card-title text text--medium text--white text--w-medium">
-
                     Помощь планете
-
                 </h4>
                 <p class="features__text-card text text--normal text--white text--w-light">
                     Применяем знания на практике! Экологические квесты, субботники, акции, сортировка и сдача отходов в экоцентры требуют подготовки. Тут ты сможешь помочь в организации процесса, прокачать soft и hard skills.
@@ -123,9 +104,7 @@
 <section class="activity block-padding-small bg--light-blue">
     <div class="activity__body container">
         <h2 class="activity__heading title title--medium title--black title--w-bold title--indent center">
-
             Активность волонтёра
-
         </h2>
         <div class="activity__subtitle text text--large text--black text--w-light center">
             За участие и помощь в мероприятиях проекта ECOfriends самые активные волонтеры получают:
@@ -159,35 +138,27 @@
 <section class="slider-video block-padding-small js-slider-video-init">
     <div class="slider-video__body container">
         <h2 class="slider-video__heading title title--medium title--black title--w-bold title--indent center">
-
             Волонтеры о проекте
-
         </h2>
         <div class="slider-video__outer">
             <div class="slider-video__swiper-container swiper-container js-slider-video">
                 <div class="slider-video__swiper-wrapper swiper-wrapper">
 
-                    <div class="slider-video__swiper-slide swiper-slide">
-                        <div class="slider-video__slide-inner">
-                            <div class="slider-video__wrapper">
-                                <iframe src="https://www.youtube.com/embed/vX_4I16QhyA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <?php if (have_rows('video-slider')) : ?>
+                        <?php while (have_rows('video-slider')) : the_row();
+
+                            $video_slider_link = get_sub_field('video_slider_link');
+
+                            ?>
+                            <div class="slider-video__swiper-slide swiper-slide">
+                                <div class="slider-video__slide-inner">
+                                    <div class="slider-video__wrapper">
+                                        <iframe src="<?= $video_slider_link; ?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="slider-video__swiper-slide swiper-slide">
-                        <div class="slider-video__slide-inner">
-                            <div class="slider-video__wrapper">
-                                <iframe src="https://www.youtube.com/embed/u1XJMCamAR0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slider-video__swiper-slide swiper-slide">
-                        <div class="slider-video__slide-inner">
-                            <div class="slider-video__wrapper">
-                                <iframe src="https://www.youtube.com/embed/sNJxvz9KU3A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                            </div>
-                        </div>
-                    </div>
+                        <?php endwhile; ?>
+                    <?php endif; ?>
 
                 </div>
             </div>
@@ -209,9 +180,7 @@
         </div>
         <div class="slider-video__action center">
             <a href="javascript:;" class="slider-video__btn button button--primary button--small" data-modal="#feedback">
-
                 Подать заявку
-
             </a>
         </div>
     </div>

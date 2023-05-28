@@ -40,18 +40,7 @@
 <!-- Plunks -->
 <section class="plunks block-padding-small">
     <div class="plunks__body container">
-        <h2 class="plunks__heading title title--medium title--black title--w-bold title--indent center">
-
-            ЭКОквест
-
-        </h2>
-        <!-- Wysiwyg -->
-        <div class="plunks__wysiwyg wysiwyg center">
-            <p>
-                Это уборка территории с раздельным сбором отходов и прохождением логических, познавательных, творческих заданий, а также тематических интерактивных станций на время
-            </p>
-        </div>
-        <!-- /. Wysiwyg -->
+        <?php get_template_part( 'template-parts/template', 'wysiwyg'); ?>
     </div>
 </section>
 <!-- /. Plunks-->
@@ -60,9 +49,7 @@
 <section class="plunks block-padding-small bg--light-blue">
     <div class="plunks__body container">
         <h2 class="plunks__heading title title--medium title--black title--w-bold title--indent center">
-
             Этапы ЭКОквеста
-
         </h2>
         <div class="plunks__items">
             <!-- Plunk -->
@@ -114,9 +101,7 @@
 <section class="plunks block-padding-small">
     <div class="plunks__body container">
         <h2 class="plunks__heading title title--medium title--black title--w-bold title--indent center">
-
             ЭКОпикник
-
         </h2>
         <!-- Wysiwyg -->
         <div class="plunks__wysiwyg wysiwyg center">
@@ -133,9 +118,7 @@
 <section class="format block-padding-small bg--light-blue">
     <div class="format__body container">
         <h2 class="format__heading title title--medium title--black title--w-bold title--indent center">
-
             Форматы ЭКОквеста
-
         </h2>
         <div class="format__items">
             <div class="format__item">
@@ -181,9 +164,7 @@
 <section class="slider-photo block-padding-small js-slider-photo-init">
     <div class="slider-photo__body container">
         <h2 class="slider-photo__heading title title--medium title--black title--w-bold title--indent center">
-
             Как это было?
-
         </h2>
         <div class="slider-photo__outer">
             <div class="slider-photo__inner">
@@ -251,9 +232,7 @@
         </div>
         <div class="slider-photo__action center">
             <a href="javascript:;" class="slider-photo__btn button button--primary" data-modal="#feedback">
-
                 Присоединиться
-
             </a>
         </div>
     </div>

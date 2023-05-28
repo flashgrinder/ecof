@@ -40,16 +40,7 @@
 <!-- Plunks -->
 <section class="plunks block-padding-small">
     <div class="plunks__body container">
-        <h2 class="plunks__heading title title--medium title--black title--w-bold title--indent center">
-            Для детей и их родителей
-        </h2>
-        <!-- Wysiwyg -->
-        <div class="plunks__wysiwyg wysiwyg center">
-            <p>
-                Мы формируем экологическую культуру и навыки для разработки проектов, позволяющих сберечь и приумножить природные ресурсы для будущих поколений
-            </p>
-        </div>
-        <!-- /. Wysiwyg -->
+        <?php get_template_part( 'template-parts/template', 'wysiwyg'); ?>
     </div>
 </section>
 <!-- /. Plunks-->
@@ -520,7 +511,7 @@
             </div>
         </div>
         <div class="steps__action center">
-            <div class="steps__btn button button--primary">
+            <div class="steps__btn button button--primary" data-modal="#feedback">
                 Стать партнёром
             </div>
         </div>
