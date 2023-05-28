@@ -3,12 +3,8 @@
   @include large(padding, 50px 0);
 }
 
-.slider-main__swiper-slide.swiper-slide {
-  height: 100%;
-}
-
-.slider-main__swiper-slide.swiper-slide .slider-main__slide-card {
-  height: auto;
+.slider-main__swiper-wrapper.swiper-wrapper {
+  align-items: stretch;
 }
 
 .slider-main__slide-card {

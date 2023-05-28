@@ -13,12 +13,16 @@
   }
 }
 
+.slider-team__swiper-wrapper.swiper-wrapper {
+  align-items: stretch;
+}
+
 .slider-team__swiper-slide.swiper-slide{
-  height: 100%;
+  height: auto;
 }
 
 .slider-team__swiper-slide.swiper-slide .slider-team__card{
-  height: auto;
+  height: 100%;
 }
 
 .slider-team__card {

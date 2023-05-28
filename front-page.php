@@ -6,44 +6,40 @@
         <div class="slider-main__outer">
             <div class="slider-main__swiper-container swiper-container js-slider-main">
                 <div class="slider-main__swiper-wrapper swiper-wrapper">
+                <?php if (have_rows('main-slider')) : ?>
+                    <?php while (have_rows('main-slider')) : the_row();
 
-                    <div class="slider-main__swiper-slide swiper-slide">
-                        <div class="slider-main__slide-card">
-                            <div class="slider-main__slide-info">
-                                <h2 class="slider-main__slide-title title title--huge title--black title--w-extra-bold">
-                                    Волонтёрам
-                                </h2>
-                                <div class="slider-main__slide-descr text text--large text--black text--w-light">
-                                    Сделай мир лучше, вместе с нами
+                        $main_slider_title = get_sub_field('main_slider_title');
+                        $main_slider_excerpt = get_sub_field('main_slider_excerpt');
+                        $main_slider_img = get_sub_field('main_slider_img');
+
+                        ?>
+                        <div class="slider-main__swiper-slide swiper-slide">
+                            <div class="slider-main__slide-card">
+                                <div class="slider-main__slide-info">
+                                    <?php if (!empty($main_slider_title)) : ?>
+                                        <h2 class="slider-main__slide-title title title--huge title--black title--w-extra-bold">
+                                            <?= $main_slider_title; ?>
+                                        </h2>
+                                    <?php endif; ?>
+                                    <?php if (!empty($main_slider_title)) : ?>
+                                        <div class="slider-main__slide-descr text text--large text--black text--w-light">
+                                            <?= $main_slider_excerpt; ?>
+                                        </div>
+                                    <?php endif; ?>
+                                    <a href="javascript:;" class="slider-main__button button button--primary" data-modal="#feedback">
+                                        Присоединяйся
+                                    </a>
                                 </div>
-                                <a href="javascript:;" class="slider-main__button button button--primary" data-modal="#feedback">
-                                    Присоединяйся
-                                </a>
-                            </div>
-                            <div class="slider-main__slide-pic">
-                                <img src="<?= STANDART_DIR; ?>img/slider-main/slide-1.svg" alt="" class="slider-main__slide-img">
+                                <?php if (!empty($main_slider_img)) : ?>
+                                    <div class="slider-main__slide-pic">
+                                        <img src="<?= esc_url($main_slider_img['url']); ?>" class="slider-main__slide-img" alt="<?= esc_url($main_slider_img['alt']); ?>">
+                                    </div>
+                                <?php endif; ?>
                             </div>
                         </div>
-                    </div>
-                    <div class="slider-main__swiper-slide swiper-slide">
-                        <div class="slider-main__slide-card">
-                            <div class="slider-main__slide-info">
-                                <h2 class="slider-main__slide-title title title--huge title--black title--w-extra-bold">
-                                    Волонтёрам
-                                </h2>
-                                <div class="slider-main__slide-descr text text--large text--black text--w-light">
-                                    Сделай мир лучше, вместе с нами
-                                </div>
-                                <a href="javascript:;" class="slider-main__button button button--primary" data-modal="#feedback">
-                                    Присоединяйся
-                                </a>
-                            </div>
-                            <div class="slider-main__slide-pic">
-                                <img src="<?= STANDART_DIR; ?>img/slider-main/slide-1.svg" alt="" class="slider-main__slide-img">
-                            </div>
-                        </div>
-                    </div>
-
+                    <?php endwhile; ?>
+                <?php endif; ?>
                 </div>
                 <div class="slider-main__pagination swiper-pagination"></div>
             </div>
@@ -60,12 +56,7 @@
                 <img src="<?= STANDART_DIR; ?>img/main-page/about.svg" alt="" class="about__img">
             </div>
             <div class="about__description wysiwyg">
-                <p>
-                    ECOfriends - проект, в котором тебе просто и доступно расскажут об экологичном образе жизни, раздельном сборе отходов. Мы поможем тебе реализовать твой проект в сфере ЦУР и ESG.
-                </p>
-                <p>
-                    Команда проекта активно взаимодействует с школами, вузами, органами муниципальной и региональной власти, социально ответственным бизнесом.
-                </p>
+                <?php the_field('about_wysiwyg'); ?>
             </div>
         </div>
     </div>
@@ -260,54 +251,34 @@
         <section class="another another--mobile">
             <div class="another__body">
                 <div class="another__items">
-                    <a href="<?= STANDART_DIR; ?>img/another/icon-1.svg" class="another__item">
-                        <div class="another__icon">
-                            <img src="<?= STANDART_DIR; ?>img/another/icon-1.svg" alt="" class="another__img-icon">
-                        </div>
-                        <h3 class="another__title text text--large text--black text--w-light">
-                            ECOprof
-                        </h3>
-                    </a>
-                    <a href="<?= STANDART_DIR; ?>img/another/icon-2.svg" class="another__item">
-                        <div class="another__icon">
-                            <img src="<?= STANDART_DIR; ?>img/another/icon-2.svg" alt="" class="another__img-icon">
-                        </div>
-                        <h3 class="another__title text text--large text--black text--w-light">
-                            Установска РСО
-                        </h3>
-                    </a>
-                    <a href="<?= STANDART_DIR; ?>img/another/icon-3.svg" class="another__item">
-                        <div class="another__icon">
-                            <img src="<?= STANDART_DIR; ?>img/another/icon-3.svg" alt="" class="another__img-icon">
-                        </div>
-                        <h3 class="another__title text text--large text--black text--w-light">
-                            ЭКОклуб
-                        </h3>
-                    </a>
-                    <a href="<?= STANDART_DIR; ?>img/another/icon-4.svg" class="another__item">
-                        <div class="another__icon">
-                            <img src="<?= STANDART_DIR; ?>img/another/icon-4.svg" alt="" class="another__img-icon">
-                        </div>
-                        <h3 class="another__title text text--large text--black text--w-light">
-                            Просвещение
-                        </h3>
-                    </a>
-                    <a href="<?= STANDART_DIR; ?>img/another/icon-5.svg" class="another__item">
-                        <div class="another__icon">
-                            <img src="<?= STANDART_DIR; ?>img/another/icon-5.svg" alt="" class="another__img-icon">
-                        </div>
-                        <h3 class="another__title text text--large text--black text--w-light">
-                            Волонтёры
-                        </h3>
-                    </a>
-                    <a href="<?= STANDART_DIR; ?>img/another/icon-6.svg" class="another__item">
-                        <div class="another__icon">
-                            <img src="<?= STANDART_DIR; ?>img/another/icon-6.svg" alt="" class="another__img-icon">
-                        </div>
-                        <h3 class="another__title text text--large text--black text--w-light">
-                            ЭКОквест
-                        </h3>
-                    </a>
+                    <?php
+                        $project_list = new WP_Query(array(
+                            'post_type'   => 'page',
+                            'post_status' => 'publish',
+                            'category_name'    => 'proekty',
+                            'posts_per_page' => -1,
+                            'orderby'     => 'date',
+                            'order'       => 'DESC',
+                            'suppress_filters' => true
+                        ));
+                    ?>
+                    <?php if( $project_list->have_posts() ) :
+                        while( $project_list->have_posts() ) : $project_list->the_post(); ?>
+                            <a href="<?php the_permalink(); ?>" class="another__item">
+                                <div class="another__icon">
+                                    <?php
+                                    $page_icon = get_field('page_icon');
+                                    if( !empty( $page_icon ) ): ?>
+                                        <img class="another__img-icon" src="<?php echo esc_url($page_icon['url']); ?>" alt="<?php echo esc_attr($page_icon['alt']); ?>" />
+                                    <?php endif; ?>
+                                </div>
+                                <h3 class="another__title text text--large text--black text--w-light">
+                                    <?php the_field('page_title'); ?>
+                                </h3>
+                            </a>
+                        <?php endwhile; ?>
+                        <?php wp_reset_postdata(); ?>
+                    <?php  endif; ?>
                 </div>
             </div>
         </section>
@@ -325,73 +296,31 @@
         <div class="slider-team__outer">
             <div class="slider-team__swiper-container swiper-container js-slider-team">
                 <div class="slider-team__swiper-wrapper swiper-wrapper">
+                    <?php if (have_rows('team-slider')) : ?>
+                        <?php while (have_rows('team-slider')) : the_row();
 
-                    <div class="slider-team__swiper-slide swiper-slide">
-                        <div class="slider-team__card">
-                            <div class="slider-team__card-pic">
-                                <img src="<?= STANDART_DIR; ?>img/main-page/slide-team-1.jpg" alt="" class="slider-team__card-img">
-                            </div>
-                            <div class="slider-team__card-title title title--medium title--white title--w-extra-bold center">
-                                Анна Савин-Кровякова
-                            </div>
-                            <div class="slider-team__card-description text text--medium text--white text--w-light center">
-                                Автор проекта ECOfriends, SEO, президент Фонда регионального экономического развития "Инвестиции и регионы"
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slider-team__swiper-slide swiper-slide">
-                        <div class="slider-team__card">
-                            <div class="slider-team__card-pic">
-                                <img src="<?= STANDART_DIR; ?>img/main-page/slide-team-2.jpg" alt="" class="slider-team__card-img">
-                            </div>
-                            <div class="slider-team__card-title title title--medium title--white title--w-extra-bold center">
-                                Ольга Гайдукова
-                            </div>
-                            <div class="slider-team__card-description text text--medium text--white text--w-light center">
-                                Исполнительный директор Фонда регионального экономического развития "Инвестиции и регионы"
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slider-team__swiper-slide swiper-slide">
-                        <div class="slider-team__card">
-                            <div class="slider-team__card-pic">
-                                <img src="<?= STANDART_DIR; ?>img/main-page/slide-team-3.jpg" alt="" class="slider-team__card-img">
-                            </div>
-                            <div class="slider-team__card-title title title--medium title--white title--w-extra-bold center">
-                                Юлия Агальцова
-                            </div>
-                            <div class="slider-team__card-description text text--medium text--white text--w-light center">
-                                Директор по развитию и Pr Фонда регионального экономического развития "Инвестиции и регионы"
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slider-team__swiper-slide swiper-slide">
-                        <div class="slider-team__card">
-                            <div class="slider-team__card-pic">
-                                <img src="<?= STANDART_DIR; ?>img/main-page/slide-team-3.jpg" alt="" class="slider-team__card-img">
-                            </div>
-                            <div class="slider-team__card-title title title--medium title--white title--w-extra-bold center">
-                                Полина Кровякова
-                            </div>
-                            <div class="slider-team__card-description text text--medium text--white text--w-light center">
-                                Руководитель проекта ECOfriends
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slider-team__swiper-slide swiper-slide">
-                        <div class="slider-team__card">
-                            <div class="slider-team__card-pic">
-                                <img src="<?= STANDART_DIR; ?>img/main-page/slide-team-3.jpg" alt="" class="slider-team__card-img">
-                            </div>
-                            <div class="slider-team__card-title title title--medium title--white title--w-extra-bold center">
-                                Юстина Сафронова
-                            </div>
-                            <div class="slider-team__card-description text text--medium text--white text--w-light center">
-                                Менеджер проекта ECOfriends
-                            </div>
-                        </div>
-                    </div>
+                            $team_slider_name = get_sub_field('team_slider_name');
+                            $team_slider_position = get_sub_field('team_slider_position');
+                            $team_slider_img = get_sub_field('team_slider_img');
 
+                            ?>
+                            <div class="slider-team__swiper-slide swiper-slide">
+                                <div class="slider-team__card">
+                                    <?php if (!empty($team_slider_img)) : ?>
+                                        <div class="slider-team__card-pic">
+                                            <img src="<?= esc_url($team_slider_img['url']); ?>" class="slider-team__card-img" alt="<?= esc_url($team_slider_img['alt']); ?>">
+                                        </div>
+                                    <?php endif; ?>
+                                    <div class="slider-team__card-title title title--medium title--white title--w-extra-bold center">
+                                        <?= $team_slider_name; ?>
+                                    </div>
+                                    <div class="slider-team__card-description text text--medium text--white text--w-light center">
+                                        <?= $team_slider_position; ?>
+                                    </div>
+                                </div>
+                            </div>
+                        <?php endwhile; ?>
+                    <?php endif; ?>
                 </div>
             </div>
             <div class="slider-team__nav">
@@ -422,29 +351,43 @@
             Новости
         </h2>
         <div class="news-main__list">
-            <article class="news-main__item">
-                <a href="" class="news-main__link">
-                    <div class="news-main__pic">
-                        <img src="https://lipsum.app/random/1500x800" alt="" class="news-main__img">
-                    </div>
-                </a>
-                <h3 class="news-main__title title title--small title--white title--w-medium">
-                    Итоги реализации детского гранта
-                </h3>
-            </article>
-            <article class="news-main__item">
-                <a href="" class="news-main__link">
-                    <div class="news-main__pic">
-                        <img src="https://lipsum.app/random/1500x800" alt="" class="news-main__img">
-                    </div>
-                </a>
-                <h3 class="news-main__title title title--small title--white title--w-medium">
-                    Итоги реализации детского гранта
-                </h3>
-            </article>
+            <?php
+
+            $main_list = new WP_Query(array(
+                'post_type'   => 'post',
+                'post_status' => 'publish',
+                'category_name'    => 'news',
+                'posts_per_page' => 2,
+                'paged'       => get_query_var('paged') ?: 1,
+                'orderby'     => 'date',
+                'order'       => 'DESC',
+                'suppress_filters' => true
+            ));
+
+            ?>
+            <?php if( $main_list->have_posts() ) :
+                while( $main_list->have_posts() ) : $main_list->the_post(); ?>
+                    <article class="news-main__item">
+                        <a href="<?php the_permalink(); ?>" class="news-main__link">
+                            <div class="news-main__pic">
+                                <?php
+                                $default_attr = [
+                                    'class'	=> "news-main__img",
+                                    'alt'   => get_the_title()
+                                ];
+                                echo get_the_post_thumbnail( $post->ID, 'large', $default_attr ); ?>
+                            </div>
+                        </a>
+                        <h3 class="news-main__title title title--small title--white title--w-medium">
+                            <?php the_title(); ?>
+                        </h3>
+                    </article>
+                <?php endwhile; ?>
+                <?php wp_reset_postdata(); ?>
+            <?php  endif; ?>
         </div>
         <div class="news-main__action center">
-            <a href="/news" class="news-main__btn button button--secondary">
+            <a href="https://eco-friends.info/novosti/" class="news-main__btn button button--secondary">
                 Еще
             </a>
         </div>

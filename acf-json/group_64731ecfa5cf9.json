@@ -1,0 +1,318 @@
+{
+    "key": "group_64731ecfa5cf9",
+    "title": "Настройки страницы",
+    "fields": [
+        {
+            "key": "field_6473200107787",
+            "label": "Главный экран",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_64731ed073618",
+            "label": "Главный слайдер",
+            "name": "main-slider",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Добавить",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_64731f4273619",
+                    "label": "Слайд",
+                    "name": "",
+                    "aria-label": "",
+                    "type": "accordion",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "open": 0,
+                    "multi_expand": 0,
+                    "endpoint": 0,
+                    "parent_repeater": "field_64731ed073618"
+                },
+                {
+                    "key": "field_64731f627361a",
+                    "label": "Заголовок",
+                    "name": "main_slider_title",
+                    "aria-label": "",
+                    "type": "textarea",
+                    "instructions": "Укажите заголовок слайда.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "rows": "",
+                    "placeholder": "",
+                    "new_lines": "br",
+                    "parent_repeater": "field_64731ed073618"
+                },
+                {
+                    "key": "field_64731f8a7361b",
+                    "label": "Описание",
+                    "name": "main_slider_excerpt",
+                    "aria-label": "",
+                    "type": "textarea",
+                    "instructions": "Укажите описание слайда.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "rows": "",
+                    "placeholder": "",
+                    "new_lines": "br",
+                    "parent_repeater": "field_64731ed073618"
+                },
+                {
+                    "key": "field_64731fc67361c",
+                    "label": "Изображение",
+                    "name": "main_slider_img",
+                    "aria-label": "",
+                    "type": "image",
+                    "instructions": "Добавьте иллюстрацию слайда.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "preview_size": "full",
+                    "parent_repeater": "field_64731ed073618"
+                }
+            ]
+        },
+        {
+            "key": "field_6473201007788",
+            "label": "О нас",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_6473203407789",
+            "label": "Описание",
+            "name": "about_wysiwyg",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "ECOfriends - проект, в котором тебе просто и доступно расскажут об экологичном образе жизни, раздельном сборе отходов. Мы поможем тебе реализовать твой проект в сфере ЦУР и ESG.\r\n\r\nКоманда проекта активно взаимодействует с школами, вузами, органами муниципальной и региональной власти, социально ответственным бизнесом.",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
+            "key": "field_6473223ddbf4b",
+            "label": "Команда",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_64732239dbf46",
+            "label": "Слайдер с командой",
+            "name": "team-slider",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Добавить",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_64732239dbf47",
+                    "label": "Слайд",
+                    "name": "",
+                    "aria-label": "",
+                    "type": "accordion",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "open": 0,
+                    "multi_expand": 0,
+                    "endpoint": 0,
+                    "parent_repeater": "field_64732239dbf46"
+                },
+                {
+                    "key": "field_64732239dbf48",
+                    "label": "ФИО",
+                    "name": "team_slider_name",
+                    "aria-label": "",
+                    "type": "textarea",
+                    "instructions": "Укажите ФИО.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "rows": "",
+                    "placeholder": "",
+                    "new_lines": "br",
+                    "parent_repeater": "field_64732239dbf46"
+                },
+                {
+                    "key": "field_64732239dbf49",
+                    "label": "Описание",
+                    "name": "team_slider_position",
+                    "aria-label": "",
+                    "type": "textarea",
+                    "instructions": "Укажите должность.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "rows": "",
+                    "placeholder": "",
+                    "new_lines": "br",
+                    "parent_repeater": "field_64732239dbf46"
+                },
+                {
+                    "key": "field_64732239dbf4a",
+                    "label": "Изображение",
+                    "name": "team_slider_img",
+                    "aria-label": "",
+                    "type": "image",
+                    "instructions": "Добавьте фото.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "preview_size": "full",
+                    "parent_repeater": "field_64732239dbf46"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_type",
+                "operator": "==",
+                "value": "front_page"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Главная страница",
+    "show_in_rest": 0,
+    "modified": 1685267404
+}

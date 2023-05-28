@@ -15,7 +15,7 @@ function init() {
         let sliderPicture = new Swiper(sliderImg, {
             slidesPerView: 1,
             speed: 1000,
-            autoHeight: true,
+            autoHeight: false,
             centeredSlides : true,
             loop: true,
             parallax: true,

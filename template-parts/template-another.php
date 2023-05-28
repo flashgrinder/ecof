@@ -5,46 +5,37 @@
             Другие проекты
         </h2>
         <div class="another__items">
-            <a href="<?= STANDART_DIR; ?>img/another/icon-1.svg" class="another__item">
-                <div class="another__icon">
-                    <img src="<?= STANDART_DIR; ?>img/another/icon-1.svg" alt="" class="another__img-icon">
-                </div>
-                <h3 class="another__title text text--large text--black text--w-light">
-                    ECOprof
-                </h3>
-            </a>
-            <a href="<?= STANDART_DIR; ?>img/another/icon-2.svg" class="another__item">
-                <div class="another__icon">
-                    <img src="<?= STANDART_DIR; ?>img/another/icon-2.svg" alt="" class="another__img-icon">
-                </div>
-                <h3 class="another__title text text--large text--black text--w-light">
-                    Волонтерство
-                </h3>
-            </a>
-            <a href="<?= STANDART_DIR; ?>img/another/icon-3.svg" class="another__item">
-                <div class="another__icon">
-                    <img src="<?= STANDART_DIR; ?>img/another/icon-3.svg" alt="" class="another__img-icon">
-                </div>
-                <h3 class="another__title text text--large text--black text--w-light">
-                    ЭКО просвещение
-                </h3>
-            </a>
-            <a href="<?= STANDART_DIR; ?>img/another/icon-4.svg" class="another__item">
-                <div class="another__icon">
-                    <img src="<?= STANDART_DIR; ?>img/another/icon-4.svg" alt="" class="another__img-icon">
-                </div>
-                <h3 class="another__title text text--large text--black text--w-light">
-                    Установка РСО
-                </h3>
-            </a>
-            <a href="<?= STANDART_DIR; ?>img/another/icon-5.svg" class="another__item">
-                <div class="another__icon">
-                    <img src="<?= STANDART_DIR; ?>img/another/icon-5.svg" alt="" class="another__img-icon">
-                </div>
-                <h3 class="another__title text text--large text--black text--w-light">
-                    ЭКОквест
-                </h3>
-            </a>
+            <?php
+                $post_id = $wp_query->get_queried_object_id();
+                $project_list = new WP_Query(array(
+                    'post__not_in' => [$post_id],
+                    'post_type'   => 'page',
+                    'post_status' => 'publish',
+                    'category_name'    => 'proekty',
+                    'posts_per_page' => -1,
+                    'orderby'     => 'date',
+                    'order'       => 'DESC',
+                    'suppress_filters' => true
+                ));
+
+            ?>
+            <?php if( $project_list->have_posts() ) :
+                while( $project_list->have_posts() ) : $project_list->the_post(); ?>
+                    <a href="<?php the_permalink(); ?>" class="another__item">
+                        <div class="another__icon">
+                            <?php
+                                $page_icon = get_field('page_icon');
+                                if( !empty( $page_icon ) ): ?>
+                                    <img class="another__img-icon" src="<?php echo esc_url($page_icon['url']); ?>" alt="<?php echo esc_attr($page_icon['alt']); ?>" />
+                            <?php endif; ?>
+                        </div>
+                        <h3 class="another__title text text--large text--black text--w-light">
+                            <?php the_field('page_title'); ?>
+                        </h3>
+                    </a>
+                <?php endwhile; ?>
+                <?php wp_reset_postdata(); ?>
+            <?php  endif; ?>
         </div>
     </div>
 </section>

@@ -45,3 +45,7 @@
     add_action('init', function() {
         add_post_type_support('page', array('excerpt'));
     });
+
+    add_action( 'init', function () {
+        register_taxonomy_for_object_type( 'category', 'page' );
+    } );
