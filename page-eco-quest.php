@@ -171,45 +171,31 @@
                 <div class="slider-photo__swiper-container slider-photo--picture swiper-container js-slider-photo-img">
                     <div class="swiper-photo__swiper-wrapper swiper-wrapper">
 
-                        <div class="slider-photo__swiper-slide swiper-slide">
-                            <div class="slider-photo__slide-inner">
-                                <div class="slider-photo__name text text--large text--black text--w-light center">
-                                    ЭКОквест 2.0
+                        <?php if (have_rows('photo-slider')) : ?>
+                            <?php while (have_rows('photo-slider')) : the_row();
+
+                                $photo_slider_title = get_sub_field('photo_slider_title');
+                                $photo_slider_excerpt = get_sub_field('photo_slider_excerpt');
+                                $photo_slider_img = get_sub_field('photo_slider_img');
+
+                            ?>
+                                <div class="slider-photo__swiper-slide swiper-slide">
+                                    <div class="slider-photo__slide-inner">
+                                        <div class="slider-photo__name text text--large text--black text--w-light center">
+                                            <?= $photo_slider_title; ?>
+                                        </div>
+                                        <div class="slider-photo__descr text text--large text--black text--w-light center">
+                                            <?= $photo_slider_excerpt; ?>
+                                        </div>
+                                        <?php if (!empty($photo_slider_img)) : ?>
+                                            <div class="slider-photo__pic">
+                                                <img src="<?= esc_url($photo_slider_img['url']); ?>" alt="<?= esc_url($photo_slider_img['alt']); ?>" class="slider-photo__img">
+                                            </div>
+                                        <?php endif; ?>
+                                    </div>
                                 </div>
-                                <div class="slider-photo__descr text text--large text--black text--w-light center">
-                                    2020 год, пруд Ударник. Более 30 человек, 790 кг отходов
-                                </div>
-                                <div class="slider-photo__pic">
-                                    <img src="https://lipsum.app/random/1600x900" alt="" class="slider-photo__img">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="slider-photo__swiper-slide swiper-slide">
-                            <div class="slider-photo__slide-inner">
-                                <div class="slider-photo__name text text--large text--black text--w-light center">
-                                    ЭКОквест 3.0
-                                </div>
-                                <div class="slider-photo__descr text text--large text--black text--w-light center">
-                                    2021 год, пруд Ударник. Более 30 человек, 790 кг отходов
-                                </div>
-                                <div class="slider-photo__pic">
-                                    <img src="https://lipsum.app/random/1500x800" alt="" class="slider-photo__img">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="slider-photo__swiper-slide swiper-slide">
-                            <div class="slider-photo__slide-inner">
-                                <div class="slider-photo__name text text--large text--black text--w-light center">
-                                    ЭКОквест 4.0
-                                </div>
-                                <div class="slider-photo__descr text text--large text--black text--w-light center">
-                                    2022 год, пруд Ударник. Более 30 человек, 790 кг отходов
-                                </div>
-                                <div class="slider-photo__pic">
-                                    <img src="https://lipsum.app/random/1200x900" alt="" class="slider-photo__img">
-                                </div>
-                            </div>
-                        </div>
+                            <?php endwhile; ?>
+                        <?php endif; ?>
 
                     </div>
                 </div>
