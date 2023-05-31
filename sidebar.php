@@ -29,7 +29,7 @@
                         echo get_the_post_thumbnail( $post->ID, 'large', $default_attr ); ?>
                     </div>
                     <div class="new__info">
-                        <a href="<?php the_permalink(); ?>" class="news__link">
+                        <a href="<?php the_field('link_post_smi'); ?>" class="news__link">
                             <h3 class="news__title title title--small title--black title--w-medium">
                                 <?php the_title(); ?>
                             </h3>

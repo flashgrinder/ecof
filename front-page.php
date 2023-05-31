@@ -267,9 +267,9 @@
                             <a href="<?php the_permalink(); ?>" class="another__item">
                                 <div class="another__icon">
                                     <?php
-                                    $page_icon = get_field('page_icon');
+                                    $page_icon = get_field('page_icon', $post->ID);
                                     if( !empty( $page_icon ) ): ?>
-                                        <img class="another__img-icon" src="<?php echo esc_url($page_icon['url']); ?>" alt="<?php echo esc_attr($page_icon['alt']); ?>" />
+                                        <img class="another__img-icon" src="<?= esc_url($page_icon['url']); ?>" alt="<?php echo esc_attr($page_icon['alt']); ?>" />
                                     <?php endif; ?>
                                 </div>
                                 <h3 class="another__title text text--large text--black text--w-light">
@@ -337,9 +337,6 @@
             </div>
             <div class="slider-team__pagination swiper-pagination"></div>
         </div>
-    </div>
-    <div class="slider-team__bg">
-        <img src="<?= STANDART_DIR; ?>img/main-page/team.svg" alt="" class="slider-team__bg-img">
     </div>
 </section>
 <!-- /. Slider-team -->

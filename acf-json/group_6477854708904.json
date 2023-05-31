@@ -1,0 +1,42 @@
+{
+    "key": "group_6477854708904",
+    "title": "Параметры страницы",
+    "fields": [
+        {
+            "key": "field_64778547aa2a8",
+            "label": "Ссылка на запись публикации в сми",
+            "name": "link_post_smi",
+            "aria-label": "",
+            "type": "url",
+            "instructions": "Вставьте ссылку.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_category",
+                "operator": "==",
+                "value": "category:smi-o-nas"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Страница категории - Сми о нас",
+    "show_in_rest": 0,
+    "modified": 1685554751
+}
