@@ -76,6 +76,7 @@
   height: 225px;
   object-fit: contain;
   object-position: center;
+  @include mobile(height, auto);
 }
 
 .new__info {

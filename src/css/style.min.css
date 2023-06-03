@@ -2889,6 +2889,10 @@ img {
     margin-top: 20px;
   }
 
+  .news__item.news__item--right .news__img {
+    height: auto;
+  }
+
   .pagination .page-numbers {
     font-size: 25px;
     width: 40px;
