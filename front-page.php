@@ -68,7 +68,7 @@
 <!-- /. About -->
 
 <!-- Projects -->
-<section class="projects">
+<section class="projects" id="projects">
     <div class="projects__body container">
         <h2 class="projects__heading title title--big title--white title--w-extra-bold title--indent-large center">
             Проекты
