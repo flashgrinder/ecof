@@ -104,7 +104,7 @@
             Календарь мероприятий
         </h2>
         <div class="calendar__plugin">
-
+            <?= do_shortcode('[events-calendar-templates category="all" template="default" style="style-2" date_format="default" start_date="" end_date="" limit="-1" order="ASC" hide-venue="no" socialshare="no" time="all"]'); ?>
         </div>
     </div>
 </section>
