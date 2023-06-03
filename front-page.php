@@ -86,7 +86,7 @@
                                     Будущее экологического предпринимательства за сегодняшними школьниками!
                                 </div>
                                 <div class="projects__action">
-                                    <a href="" class="projects__button button button--primary button--small">
+                                    <a href="https://eco-friends.info/ecoprof/" class="projects__button button button--primary button--small">
                                         Перейти
                                     </a>
                                 </div>
@@ -108,7 +108,7 @@
                                     Наша команда комплексно внедряет систему раздельного сбора отходов на территориях учебных заведений и офисов.
                                 </div>
                                 <div class="projects__action">
-                                    <a href="" class="projects__button button button--primary button--small">
+                                    <a href="https://eco-friends.info/vnedrenie-rso/" class="projects__button button button--primary button--small">
                                         Перейти
                                     </a>
                                 </div>
@@ -130,7 +130,7 @@
                                     Реализуйте свои навыки, воплощайте идеи и узнавайте новое!
                                 </div>
                                 <div class="projects__action">
-                                    <a href="" class="projects__button button button--primary button--small">
+                                    <a href="https://eco-friends.info/ekoklub/" class="projects__button button button--primary button--small">
                                         Перейти
                                     </a>
                                 </div>
@@ -152,7 +152,7 @@
                                     Участники узнают, как правильно разделять отходы, научатся вести осознанный образ жизни и приобретут ЭКОпривычки!
                                 </div>
                                 <div class="projects__action">
-                                    <a href="" class="projects__button button button--primary button--small">
+                                    <a href="https://eco-friends.info/eko-prosveshhenie/" class="projects__button button button--primary button--small">
                                         Перейти
                                     </a>
                                 </div>
@@ -174,7 +174,7 @@
                                     Проект ECOfriends объединяет экоактивистов, которые принимают участие в жизни своего региона и продвигают экологическую повестку.
                                 </div>
                                 <div class="projects__action">
-                                    <a href="" class="projects__button button button--primary button--small">
+                                    <a href="https://eco-friends.info/volonterskij-korpus/" class="projects__button button button--primary button--small">
                                         Перейти
                                     </a>
                                 </div>
@@ -196,7 +196,7 @@
                                     ЭКОквест – уборка территории с раздельным сбором отходов и прохождением логических, познавательных, творческих заданий, а также тематических интерактивных станций на время.
                                 </div>
                                 <div class="projects__action">
-                                    <a href="" class="projects__button button button--primary button--small">
+                                    <a href="https://eco-friends.info/ekokvest-i-ekopiknik/" class="projects__button button button--primary button--small">
                                         Перейти
                                     </a>
                                 </div>
