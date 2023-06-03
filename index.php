@@ -54,8 +54,12 @@
                                     'base'    => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
                                     'current' => max( 1, get_query_var('paged') ),
                                     'total'   => $post_list->max_num_pages,
-                                    'prev_text'    => __('&#60;'),
-                                    'next_text'    => __('&#62;'),
+                                    'prev_text'    => '<svg viewBox="0 0 25 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M0 25L25 0V50L0 25Z" fill="#8ABC36" fill-opacity="0.5"/>
+                                                        </svg>',
+                                    'next_text'    => '<svg viewBox="0 0 25 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M25 25L0 50L-4.37114e-06 2.18557e-06L25 25Z" fill="#8ABC36" fill-opacity="0.5"/>
+                                                        </svg>',
                                 ));
                         ?>
                     </div>
