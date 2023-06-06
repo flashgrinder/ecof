@@ -1,10 +1,16 @@
+.another.another--main-page {
+  position: relative;
+}
+
 .another.another--main-page .another__items {
-  transform: translateY(185px);
-  //max-width: 1250px;
   margin: 0 auto;
   flex-wrap: nowrap;
   grid-gap: 20px;
-  @include tablet(transform, translateY(60px));
+  position: absolute;
+  width: 100%;
+  bottom: -180px;
+  margin-left: 50%;
+  transform: translateX(-50%);
 }
 
 .another--mobile {

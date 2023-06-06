@@ -8,7 +8,7 @@
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.05);
   border-radius: 20px;
   padding: 40px 120px 120px;
-  @include tablet(padding, 40px 100px 0);
+  @include tablet(padding, 40px 100px 120px);
   @include tabletSM(display, none);
 }
 
@@ -18,16 +18,18 @@
 .projects__card {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(200px, 530px));
   grid-gap: 20px;
   @include tablet-block {
     grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+    grid-template-rows: auto;
   }
 }
 
-.projects__wrap-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.projects__card .projects__excerpt {
+  @include tablet-block {
+    font-size: 20px;
+  }
 }
 
 .projects__img {
@@ -37,7 +39,7 @@
 }
 
 .projects__info {
-  margin-top: auto;
+  margin-top: 120px;
   @include tablet(margin-top, 50px);
 }
 
