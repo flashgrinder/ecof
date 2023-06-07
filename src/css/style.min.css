@@ -2182,11 +2182,16 @@ img {
   align-items: stretch;
 }
 
+.slider-main__swiper-slide .swiper-slide {
+  height: auto;
+}
+
 .slider-main__slide-card {
   display: grid;
   grid-template-columns: minmax(300px, 650px) minmax(500px, 1fr);
   align-items: center;
   justify-content: space-around;
+  height: 100%;
 }
 
 .slider-main__slide-descr {
