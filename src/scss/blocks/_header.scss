@@ -31,7 +31,7 @@
   left: 0;
   z-index: -1;
   @include mobile(max-width, 70%);
-  @include mobileXS(max-width, 85%);
+  @include mobileXS(max-width, 105%);
 }
 
 .header__logo-img {
