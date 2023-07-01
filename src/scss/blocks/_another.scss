@@ -5,12 +5,12 @@
 .another.another--main-page .another__items {
   margin: 0 auto;
   flex-wrap: nowrap;
-  grid-gap: 20px;
+  gap: 60px;
   position: absolute;
   width: 100%;
   bottom: -180px;
-  margin-left: 50%;
-  transform: translateX(-50%);
+  @include large(gap, 30px);
+  @include tablet(gap, 20px);
 }
 
 .another--mobile {
@@ -52,6 +52,23 @@
   border-radius: 50%;
   width: 136px;
   height: 136px;
+}
+
+.another.another--main-page .another__item .another__img-icon {
+  filter: hue-rotate(115deg);
+  opacity: 0.5;
+  transition: transform .3s ease-in-out, filter .3s ease-in-out, opacity .3s ease-in-out;
+}
+
+.another.another--main-page .another__item:hover .another__img-icon {
+  filter: hue-rotate(0);
+  opacity: 1;
+}
+
+.another__item.tabs__button.is-active .another__img-icon {
+  filter: hue-rotate(0);
+  opacity: 1;
+  transform: scale(1);
 }
 
 .another__img-icon {

@@ -1023,12 +1023,10 @@ img {
 .another.another--main-page .another__items {
   margin: 0 auto;
   flex-wrap: nowrap;
-  grid-gap: 20px;
+  gap: 60px;
   position: absolute;
   width: 100%;
   bottom: -180px;
-  margin-left: 50%;
-  transform: translateX(-50%);
 }
 
 .another--mobile {
@@ -1066,6 +1064,28 @@ img {
   border-radius: 50%;
   width: 136px;
   height: 136px;
+}
+
+.another.another--main-page .another__item .another__img-icon {
+  -webkit-filter: hue-rotate(115deg);
+          filter: hue-rotate(115deg);
+  opacity: 0.5;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out, -webkit-filter 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out, opacity 0.3s ease-in-out, -webkit-filter 0.3s ease-in-out;
+}
+
+.another.another--main-page .another__item:hover .another__img-icon {
+  -webkit-filter: hue-rotate(0);
+          filter: hue-rotate(0);
+  opacity: 1;
+}
+
+.another__item.tabs__button.is-active .another__img-icon {
+  -webkit-filter: hue-rotate(0);
+          filter: hue-rotate(0);
+  opacity: 1;
+  transform: scale(1);
 }
 
 .another__img-icon {
@@ -2270,7 +2290,11 @@ img {
   background: var(--color-white);
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.05);
   border-radius: 20px;
-  padding: 40px 120px 120px;
+  padding: 33px 98px 113px;
+}
+
+.projects__wrap-info {
+  margin-top: 58px;
 }
 
 .projects__card {
@@ -2286,7 +2310,7 @@ img {
 }
 
 .projects__info {
-  margin-top: 120px;
+  margin-top: 80px;
 }
 
 .projects__action {
@@ -2587,6 +2611,10 @@ img {
     margin-left: 50px;
   }
 
+  .another.another--main-page .another__items {
+    gap: 30px;
+  }
+
   .news__inner {
     grid-gap: 50px;
   }
@@ -2597,6 +2625,12 @@ img {
 
   .slider-main {
     padding: 50px 0;
+  }
+
+  .projects__card {
+    grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+    grid-template-rows: auto;
+    align-items: center;
   }
 
   .footer__menu {
@@ -2698,6 +2732,10 @@ img {
     margint-top: 30px;
   }
 
+  .another.another--main-page .another__items {
+    gap: 20px;
+  }
+
   .slider-photo__descr,
   .slider-photo__pic {
     margin-top: 30px;
@@ -2743,15 +2781,6 @@ img {
   .about__description {
     order: -1;
     max-width: 100%;
-  }
-
-  .projects__tabs {
-    padding: 40px 100px 120px;
-  }
-
-  .projects__card {
-    grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
-    grid-template-rows: auto;
   }
 
   .projects__card .projects__excerpt {
