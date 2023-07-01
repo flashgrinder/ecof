@@ -2144,13 +2144,24 @@ img {
 
 .about__outer {
   display: grid;
-  grid-template-columns: minmax(600px, 1fr) minmax(300px, 1fr);
+  grid-template-columns: minmax(600px, 850px) minmax(300px, 1fr);
   align-items: center;
+  gap: 50px;
+}
+
+.about__pic {
+  transform: translateY(10px);
+}
+
+.about__img {
+  display: block;
 }
 
 .about__description {
   position: relative;
   z-index: 10;
+  max-width: 600px;
+  align-self: baseline;
 }
 
 .about__decor {
@@ -2731,6 +2742,7 @@ img {
 
   .about__description {
     order: -1;
+    max-width: 100%;
   }
 
   .projects__tabs {
