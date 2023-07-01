@@ -2958,6 +2958,10 @@ img {
     height: 40px;
   }
 
+  .slider-main__swiper-wrapper.swiper-wrapper {
+    height: auto;
+  }
+
   .slider-team {
     padding: 50px 0 205px;
   }

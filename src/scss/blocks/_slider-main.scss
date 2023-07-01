@@ -6,6 +6,9 @@
 .slider-main__swiper-wrapper.swiper-wrapper {
   align-items: stretch;
   height: 75vh;
+  @include mobile-block {
+    height: auto;
+  }
 }
 
 .slider-main__swiper-slide.swiper-slide {
