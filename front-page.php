@@ -18,7 +18,7 @@
                             <div class="slider-main__slide-card">
                                 <div class="slider-main__slide-info">
                                     <?php if (!empty($main_slider_title)) : ?>
-                                        <h2 class="slider-main__slide-title title title--huge title--black title--w-extra-bold">
+                                        <h2 class="slider-main__slide-title title title--huge title--black title--w-bold">
                                             <?= $main_slider_title; ?>
                                         </h2>
                                     <?php endif; ?>

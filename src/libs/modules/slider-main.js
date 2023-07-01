@@ -1,8 +1,8 @@
-import Swiper, {Pagination, EffectFade} from 'swiper';
+import Swiper, {Pagination, EffectFade, EffectCoverflow} from 'swiper';
 
 function init() {
 
-    Swiper.use([Pagination , EffectFade]);
+    Swiper.use([Pagination , EffectFade, EffectCoverflow]);
 
     const listSlider = Array.from(document.querySelectorAll(".js-slider-main-init"));
 
@@ -27,10 +27,18 @@ function init() {
                 bulletActiveClass: 'slider-main__bullet--active',
                 bulletClass: 'slider-main__bullet',
             },
-            effect: 'fade',
-            fadeEffect: {
-                crossFade: true
+            // effect: 'fade',
+            effect: 'coverflow',
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: -300,
+                modifier: 1,
+                slideShadows: false
             },
+            // fadeEffect: {
+            //     crossFade: true
+            // },
         });
 
     })
