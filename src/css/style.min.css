@@ -2843,7 +2843,7 @@ img {
   }
 
   .partners__cards {
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: 1fr;
   }
 
   .contacts__inner {
