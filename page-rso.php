@@ -106,9 +106,7 @@
 <section class="plunks block-padding-small">
     <div class="plunks__body container">
         <h2 class="plunks__heading title title--medium title--black title--w-bold title--indent center">
-
             Для бизнеса
-
         </h2>
         <!-- Wysiwyg -->
         <div class="plunks__wysiwyg wysiwyg center">
@@ -150,60 +148,85 @@
             <p>
                 Вы получаете:
             </p>
+            <br>
         </div>
         <!-- /. Wysiwyg -->
-        <div class="plunks__items">
-            <!-- Plunk -->
-            <article class="plunk">
-                <div class="plunk__icon">
-                    <img src="<?= STANDART_DIR; ?>img/plunks/plunk-rso-h-1.svg" alt="" class="plunk__img-icon">
+        <!-- Slider-cards -->
+        <section class="slider-cards js-slider-cards-init">
+            <div class="slider-cards__body">
+                <div class="slider-cards__outer js-slider-cards-outer">
+                    <div class="slider-cards__swiper-container swiper-container js-slider-cards">
+                        <div class="slider-cards__swiper-wrapper swiper-wrapper">
+
+                            <div class="slider-cards__swiper-slide swiper-slide">
+                                <article class="plunk">
+                                    <div class="plunk__icon">
+                                        <img src="<?= STANDART_DIR; ?>img/plunks/plunk-rso-h-1.svg" alt="" class="plunk__img-icon">
+                                    </div>
+                                    <p class="plunk__text text text--normal text--black text--w-light center">
+                                        Курс лекций
+                                    </p>
+                                </article>
+                            </div>
+                            <div class="slider-cards__swiper-slide swiper-slide">
+                                <article class="plunk">
+                                    <div class="plunk__icon">
+                                        <img src="<?= STANDART_DIR; ?>img/plunks/plunk-rso-h-2.svg" alt="" class="plunk__img-icon">
+                                    </div>
+                                    <p class="plunk__text text text--normal text--black text--w-light center">
+                                        Корпоративную рассылку с материалами для закрепления теории
+                                    </p>
+                                </article>
+                            </div>
+                            <div class="slider-cards__swiper-slide swiper-slide">
+                                <article class="plunk">
+                                    <div class="plunk__icon">
+                                        <img src="<?= STANDART_DIR; ?>img/plunks/plunk-rso-h-3.svg" alt="" class="plunk__img-icon">
+                                    </div>
+                                    <p class="plunk__text text text--normal text--black text--w-light center">
+                                        Установку урн на территории офиса
+                                    </p>
+                                </article>
+                            </div>
+                            <div class="slider-cards__swiper-slide swiper-slide">
+                                <article class="plunk">
+                                    <div class="plunk__icon">
+                                        <img src="<?= STANDART_DIR; ?>img/plunks/plunk-rso-h-4.svg" alt="" class="plunk__img-icon">
+                                    </div>
+                                    <p class="plunk__text text text--normal text--black text--w-light center">
+                                        Разбор кейсов по вашему направлению
+                                    </p>
+                                </article>
+                            </div>
+                            <div class="slider-cards__swiper-slide swiper-slide">
+                                <article class="plunk">
+                                    <div class="plunk__icon">
+                                        <img src="<?= STANDART_DIR; ?>img/plunks/plunk-rso-h-5.svg" alt="" class="plunk__img-icon">
+                                    </div>
+                                    <p class="plunk__text text text--normal text--black text--w-light center">
+                                        Вывоз сортированных отходов нашими партнерами
+                                    </p>
+                                </article>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="slider-cards__nav slider-nav">
+                        <div class="slider-cards__swiper-button-prev slider-cards__slider-arrow js-slider-cards-prev slider-nav__arrow slider-nav__arrow--prev">
+                            <svg class="slider-cards__slider-arrow-svg slider-nav__arrow-svg" width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 1L1.82588 4.75671C1.3845 5.15395 1.3845 5.84605 1.82588 6.24329L6 10" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                        </div>
+                        <div class="slider-cards__swiper-button-next slider-cards__slider-arrow js-slider-cards-next slider-nav__arrow slider-nav__arrow--next">
+                            <svg class="slider-cards__slider-arrow-svg slider-nav__arrow-svg" width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L5.17412 4.75671C5.6155 5.15395 5.6155 5.84605 5.17412 6.24329L1 10" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                        </div>
+                    </div>
                 </div>
-                <p class="plunk__text text text--normal text--black text--w-light center">
-                    Курс лекций
-                </p>
-            </article>
-            <!-- /. Plunk -->
-            <!-- Plunk -->
-            <article class="plunk">
-                <div class="plunk__icon">
-                    <img src="<?= STANDART_DIR; ?>img/plunks/plunk-rso-h-2.svg" alt="" class="plunk__img-icon">
-                </div>
-                <p class="plunk__text text text--normal text--black text--w-light center">
-                    Корпоративную рассылку с материалами для закрепления теории
-                </p>
-            </article>
-            <!-- /. Plunk -->
-            <!-- Plunk -->
-            <article class="plunk">
-                <div class="plunk__icon">
-                    <img src="<?= STANDART_DIR; ?>img/plunks/plunk-rso-h-3.svg" alt="" class="plunk__img-icon">
-                </div>
-                <p class="plunk__text text text--normal text--black text--w-light center">
-                    Установку урн на территории офиса
-                </p>
-            </article>
-            <!-- /. Plunk -->
-            <!-- Plunk -->
-            <article class="plunk">
-                <div class="plunk__icon">
-                    <img src="<?= STANDART_DIR; ?>img/plunks/plunk-rso-h-4.svg" alt="" class="plunk__img-icon">
-                </div>
-                <p class="plunk__text text text--normal text--black text--w-light center">
-                    Разбор кейсов по вашему направлению
-                </p>
-            </article>
-            <!-- /. Plunk -->
-            <!-- Plunk -->
-            <article class="plunk">
-                <div class="plunk__icon">
-                    <img src="<?= STANDART_DIR; ?>img/plunks/plunk-rso-h-5.svg" alt="" class="plunk__img-icon">
-                </div>
-                <p class="plunk__text text text--normal text--black text--w-light center">
-                    Вывоз сортированных отходов нашими партнерами
-                </p>
-            </article>
-            <!-- /. Plunk -->
-        </div>
+            </div>
+        </section>
+        <!-- /. Slider-cards -->
     </div>
 </section>
 <!-- /. Plunks-->
