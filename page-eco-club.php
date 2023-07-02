@@ -54,7 +54,7 @@
                                         <img src="<?= STANDART_DIR; ?>img/plunks/plunk-1.svg" alt="" class="plunk__img-icon">
                                     </div>
                                     <p class="plunk__text text text--normal text--black text--w-light center">
-                                        Индивидуальный подход (программа строится исходя из вашего запроса и возраста участников)
+                                        Экскурсии на мусороперерабатывающие комплексы и предприятия
                                     </p>
                                 </article>
                             </div>
@@ -64,7 +64,7 @@
                                         <img src="<?= STANDART_DIR; ?>img/plunks/plunk-1.svg" alt="" class="plunk__img-icon">
                                     </div>
                                     <p class="plunk__text text text--normal text--black text--w-light center">
-                                        Квалифицированные специалисты (эксперты проекта, предприниматели, опытные эко-волонтеры)
+                                        Посещение тематических выставок
                                     </p>
                                 </article>
                             </div>
@@ -74,7 +74,7 @@
                                         <img src="<?= STANDART_DIR; ?>img/plunks/plunk-1.svg" alt="" class="plunk__img-icon">
                                     </div>
                                     <p class="plunk__text text text--normal text--black text--w-light center">
-                                        Интерактивный подход (обучающие материалы и игры, видеоролики)
+                                        Участие в конференциях и форумах по всей России
                                     </p>
                                 </article>
                             </div>
@@ -84,7 +84,7 @@
                                         <img src="<?= STANDART_DIR; ?>img/plunks/plunk-1.svg" alt="" class="plunk__img-icon">
                                     </div>
                                     <p class="plunk__text text text--normal text--black text--w-light center">
-                                        Мобильность (выезды в школу/садик/университет и на другие площадки)
+                                        Мастер-классы по кастомизации одежды, изготовлению открыток и др.
                                     </p>
                                 </article>
                             </div>
@@ -94,7 +94,7 @@
                                         <img src="<?= STANDART_DIR; ?>img/plunks/plunk-1.svg" alt="" class="plunk__img-icon">
                                     </div>
                                     <p class="plunk__text text text--normal text--black text--w-light center">
-                                        Нестандартный формат занятий (в теплое время года уроки проводятся на свежем воздухе)
+                                        Обучение по системе наставничества
                                     </p>
                                 </article>
                             </div>
