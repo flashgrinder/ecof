@@ -38,6 +38,11 @@
   display: block;
 }
 
+.header--home .header__inner {
+  margin-right: 5%;
+  @include large(margin-right, 0);
+}
+
 .header__inner {
   align-self: flex-start;
   @include tablet-block {

@@ -8,7 +8,7 @@
 <body class="page bg--white js-page-open-menu">
 
 <!-- Header -->
-<header class="header">
+<header class="header header--home">
     <div class="header__body container">
         <div class="header__outer">
             <?php if( is_front_page() ): ?>

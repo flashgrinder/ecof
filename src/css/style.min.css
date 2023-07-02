@@ -828,6 +828,10 @@ img {
   display: block;
 }
 
+.header--home .header__inner {
+  margin-right: 5%;
+}
+
 .header__inner {
   align-self: flex-start;
 }
@@ -2612,6 +2616,10 @@ img {
 }
 
 @media screen and (max-width: 1200px) {
+  .header--home .header__inner {
+    margin-right: 0;
+  }
+
   .header__menu.menu {
     font-size: 18px;
   }
