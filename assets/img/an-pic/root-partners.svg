@@ -1,1 +1,6 @@
-<svg width="1130" height="31" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity=".15" d="M565 1v30M1 1v30M1129 1v30M.5 1h1129" stroke="#000"/></svg>
+<svg width="1130" height="31" viewBox="0 0 1130 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path opacity="0.15" d="M565 1V31" stroke="black"/>
+<path opacity="0.15" d="M1 1V31" stroke="black"/>
+<path opacity="0.15" d="M1129 1V31" stroke="black"/>
+<path opacity="0.15" d="M0.5 0.999951L1129.5 0.999949" stroke="black"/>
+</svg>
