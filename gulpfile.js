@@ -185,7 +185,7 @@ function optimgBuild() {
 			max: 80,
 			quality:'medium'
 		}),
-		imagemin.svgo(),
+		// imagemin.svgo(),
 		imagemin.optipng({optimizationLevel: 3}),
 		pngquant({quality: [0.7, 0.8], speed: 5})
 	],{
