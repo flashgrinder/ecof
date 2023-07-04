@@ -7,6 +7,7 @@ import sliderTeam from '../libs/modules/slider-team';
 import sliderCards from '../libs/modules/slider-cards';
 import sliderVideo from '../libs/modules/slider-video';
 import sliderPhoto from '../libs/modules/slider-photo';
+import accordion from '../libs/modules/accordion';
 document.addEventListener('DOMContentLoaded', function(e) {
 
     gsap.config({
@@ -24,6 +25,9 @@ document.addEventListener('DOMContentLoaded', function(e) {
 
     const tabsTrue = document.querySelector('.js-tabs-init');
     tabsTrue ? tabs.init() : false;
+
+    const accordionTrue = document.querySelector('.js-accordion');
+    accordionTrue ? accordion.init() : false;
 
     const sliderCardsSliderTrue = document.querySelector('.js-slider-cards-init');
     const sliderVideoSliderTrue = document.querySelector('.js-slider-video-init');

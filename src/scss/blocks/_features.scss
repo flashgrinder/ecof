@@ -1,20 +1,42 @@
 .features__items {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  grid-gap: 25px 24px;
+  width: 100%;
+  height: auto;
 }
 
 .features__card {
-  padding: 40px 46px;
-  background: var(--color-blue);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
-  border-radius: 20px;
   text-align: center;
-  max-width: 477px;
+  max-width: 1040px;
+  margin: 0 auto;
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.02);
   @include tablet(max-width, 100%);
 }
 
+.features__card ~ .features__card {
+  margin-top: 30px;
+}
+
+.features__card-title {
+  padding: 36px 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
 .features__text-card {
-  margin-top: 20px;
+  padding: 0;
+  width: 100%;
+  opacity: 0;
+  height: auto;
+  max-height: 0;
+  transition: padding .3s ease-in-out, max-height .3s ease-in-out;
+}
+
+.features__card.is-active .features__text-card {
+  padding: 30px 70px;
 }
