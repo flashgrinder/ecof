@@ -2985,6 +2985,14 @@ img {
     opacity: 0.1;
   }
 
+  .features__card-title {
+    padding: 25px 20px;
+  }
+
+  .features__card.is-active .features__text-card {
+    padding: 20px 30px;
+  }
+
   .slider-nav__arrow--prev {
     left: -10px;
   }
@@ -3096,6 +3104,10 @@ img {
   .wysiwyg ul,
   .wysiwyg ol {
     padding-left: 25px;
+  }
+
+  .features__card-title {
+    background-image: none !important;
   }
 
   .contact__item-wrap {

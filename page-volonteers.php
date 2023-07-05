@@ -61,7 +61,7 @@
                 </p>
             </div>
             <div class="features__card js-accordion-item accordion__item">
-                <h4 class="features__card-title text text--large text--black text--w-light js-accordion-title" style="background-image: url(<?= STANDART_DIR; ?>img/an-pic/ft-4.svg); background-color: rgba(191, 161, 202, 1)">
+                <h4 class="features__card-title text text--large text--black text--w-light js-accordion-title" style="background-image: url(<?= STANDART_DIR; ?>img/an-pic/ft-4.svg); background-color: rgba(233, 220, 255, 1)">
                     Медиа-волонтеры
                 </h4>
                 <p class="features__text-card accordion__text text text--medium text--black text--w-light">
@@ -69,7 +69,7 @@
                 </p>
             </div>
             <div class="features__card js-accordion-item accordion__item">
-                <h4 class="features__card-title text text--large text--black text--w-light js-accordion-title" style="background-image: url(<?= STANDART_DIR; ?>img/an-pic/ft-3.svg); background-color: rgba(214, 231, 253, 1)">
+                <h4 class="features__card-title text text--large text--black text--w-light js-accordion-title" style="background-image: url(<?= STANDART_DIR; ?>img/an-pic/ft-3.svg); background-color: rgba(243, 230, 216, 1)">
                     Творчество
                 </h4>
                 <p class="features__text-card accordion__text text text--medium text--black text--w-light">
@@ -77,7 +77,7 @@
                 </p>
             </div>
             <div class="features__card js-accordion-item accordion__item">
-                <h4 class="features__card-title text text--large text--black text--w-light js-accordion-title" style="background-image: url(<?= STANDART_DIR; ?>img/an-pic/ft-2.svg)">
+                <h4 class="features__card-title text text--large text--black text--w-light js-accordion-title" style="background-image: url(<?= STANDART_DIR; ?>img/an-pic/ft-2.svg); background-color: rgba(255, 213, 183, 1)">
                     Просвещение
                 </h4>
                 <p class="features__text-card accordion__text text text--medium text--black text--w-light">
@@ -85,7 +85,7 @@
                 </p>
             </div>
             <div class="features__card js-accordion-item accordion__item">
-                <h4 class="features__card-title text text--large text--black text--w-light js-accordion-title" style="background-image: url(<?= STANDART_DIR; ?>img/an-pic/ft-5.svg); background-color: rgba(214, 231, 253, 1)">
+                <h4 class="features__card-title text text--large text--black text--w-light js-accordion-title" style="background-image: url(<?= STANDART_DIR; ?>img/an-pic/ft-5.svg); background-color: rgba(214, 251, 253, 1)">
                     Помощь планете
                 </h4>
                 <p class="features__text-card accordion__text text text--medium text--black text--w-light">

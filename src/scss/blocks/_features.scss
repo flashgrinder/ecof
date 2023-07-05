@@ -26,6 +26,8 @@
   cursor: pointer;
   border-radius: 20px;
   overflow: hidden;
+  @include mobile(padding, 25px 20px);
+  @include mobileXS(background-image, none !important);
 }
 
 .features__text-card {
@@ -39,4 +41,5 @@
 
 .features__card.is-active .features__text-card {
   padding: 30px 70px;
+  @include mobile(padding, 20px 30px);
 }
