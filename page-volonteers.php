@@ -127,6 +127,11 @@
                 </div>
             </div>
         </div>
+        <div class="activity__action center">
+            <a href="javascript:;" class="activity__btn button button--primary button--small" data-modal="#feedback">
+                Перейти
+            </a>
+        </div>
     </div>
 </section>
 <!-- /. Activity -->

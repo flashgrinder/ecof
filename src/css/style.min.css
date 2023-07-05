@@ -1632,6 +1632,13 @@ img {
 
 /* Activity */
 
+.activity {
+  background-image: url("../img/an-pic/bg-activity.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 .activity__inner {
   display: grid;
   grid-template-columns: minmax(200px, 1fr) minmax(300px, 340px) minmax(200px, 1fr);
@@ -1656,6 +1663,10 @@ img {
 
 .activity__plunk:last-child {
   transform: translateY(50%);
+}
+
+.activity__action {
+  margin-top: 100px;
 }
 
 /* Buttons */
