@@ -177,6 +177,7 @@
                                 $photo_slider_title = get_sub_field('photo_slider_title');
                                 $photo_slider_excerpt = get_sub_field('photo_slider_excerpt');
                                 $photo_slider_img = get_sub_field('photo_slider_img');
+                                $photo_slider_img_scd = get_sub_field('photo_slider_img_scd');
 
                             ?>
                                 <div class="slider-photo__swiper-slide swiper-slide">
@@ -187,11 +188,18 @@
                                         <div class="slider-photo__descr text text--large text--black text--w-light center">
                                             <?= $photo_slider_excerpt; ?>
                                         </div>
-                                        <?php if (!empty($photo_slider_img)) : ?>
-                                            <div class="slider-photo__pic">
-                                                <img src="<?= esc_url($photo_slider_img['url']); ?>" alt="<?= esc_url($photo_slider_img['alt']); ?>" class="slider-photo__img">
-                                            </div>
-                                        <?php endif; ?>
+                                        <div class="slider-photo__wrap">
+                                            <?php if (!empty($photo_slider_img)) : ?>
+                                                <div class="slider-photo__pic">
+                                                    <img src="<?= esc_url($photo_slider_img['url']); ?>" alt="<?= esc_url($photo_slider_img['alt']); ?>" class="slider-photo__img">
+                                                </div>
+                                            <?php endif; ?>
+                                            <?php if (!empty($photo_slider_img_scd)) : ?>
+                                                <div class="slider-photo__pic">
+                                                    <img src="<?= esc_url($photo_slider_img_scd['url']); ?>" alt="<?= esc_url($photo_slider_img_scd['alt']); ?>" class="slider-photo__img">
+                                                </div>
+                                            <?php endif; ?>
+                                        </div>
                                     </div>
                                 </div>
                             <?php endwhile; ?>

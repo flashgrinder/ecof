@@ -36,15 +36,22 @@
   @include  tablet(margin-top, 30px);
 }
 
+.slider-photo__wrap {
+  display: flex;
+  gap: 23px;
+}
+
 .slider-photo__pic {
   width: 100%;
-  position: relative;
-  padding-top: 56.25%;
+  overflow: hidden;
+  border-radius: 20px;
+  //position: relative;
+  //padding-top: 56.25%;
 }
 
 .slider-photo__img {
-  position: absolute;
-  inset: 0;
+  //position: absolute;
+  //inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -52,8 +59,8 @@
 }
 
 .slider-photo__nav.slider-nav {
-  top: 59%;
-  transform: translateY(-59%);
+  top: 66%;
+  transform: translateY(-66%);
   @include tablet-block {
     position: relative;
     transform: translateY(0);
