@@ -10,7 +10,6 @@
   width: 100%;
   bottom: -180px;
   @include large(gap, 30px);
-  @include tablet(gap, 20px);
 }
 
 .another--mobile {
@@ -58,6 +57,13 @@
   filter: hue-rotate(115deg);
   opacity: 0.5;
   transition: transform .3s ease-in-out, filter .3s ease-in-out, opacity .3s ease-in-out;
+}
+
+.another.another--main-page .another__item .another__icon {
+  @include tablet-block {
+    width: 120px;
+    height: 120px;
+  }
 }
 
 .another.another--main-page .another__item:hover .another__img-icon {

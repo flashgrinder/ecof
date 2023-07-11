@@ -1,3 +1,10 @@
+.page-news {
+  background: url("../img/bg-news.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 100%;
+}
+
 .news {
   padding: 100px 0 100px;
   @include mobileXS(padding, 50px 0 50px);

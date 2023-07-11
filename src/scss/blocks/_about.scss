@@ -13,9 +13,12 @@
 
 .about__outer {
   display: grid;
-  grid-template-columns: minmax(600px, 850px) minmax(300px, 1fr);
+  grid-template-columns: minmax(600px, 850px) minmax(300px, 600px);
   align-items: center;
   gap: 50px;
+  margin: 0 auto;
+  max-width: 1920px;
+  justify-content: space-evenly;
   @include tablet-block {
     grid-template-columns: 1fr;
     grid-gap: 50px;

@@ -19,9 +19,10 @@
   display: grid;
   grid-template-columns: minmax(300px, 550px) minmax(400px, 800px);
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   height: 100%;
   position: relative;
+  padding: 0 20px;
   @include tabletSM-block {
     grid-template-columns: 1fr;
     flex-direction: row;
@@ -50,11 +51,11 @@
 }
 
 .slider-main__slide-pic {
-  position: absolute;
-  right: 0;
-  z-index: -1;
-  top: 50%;
-  transform: translateY(-50%);
+  //position: absolute;
+  //right: 0;
+  //z-index: -1;
+  //top: 50%;
+  //transform: translateY(-50%);
   @include tabletSM-block {
     position: relative;
     z-index: -1;

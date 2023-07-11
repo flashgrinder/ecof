@@ -8,15 +8,16 @@
 <body class="page bg--white js-page-open-menu">
 
 <!-- Header -->
-<header class="header header--home">
+<header class="header <?php if( is_front_page() ): ?>header--home<?php endif; ?>">
+    <?php if( is_front_page() ): ?>
+    <a href="<?= home_url(); ?>" class="header__logo logo header__logo--home">
+        <img src="<?= STANDART_DIR; ?>img/logo-white.svg" alt="" class="header__logo-img logo__img">
+        <img src="<?= STANDART_DIR; ?>img/logo-bg.svg" alt="" class="header__logo-decor">
+    </a>
+    <?php endif; ?>
     <div class="header__body container">
         <div class="header__outer">
-            <?php if( is_front_page() ): ?>
-            <a href="<?= home_url(); ?>" class="header__logo logo header__logo--home">
-                <img src="<?= STANDART_DIR; ?>img/logo-white.svg" alt="" class="header__logo-img logo__img">
-                <img src="<?= STANDART_DIR; ?>img/logo-bg.svg" alt="" class="header__logo-decor">
-            </a>
-            <?php else : ?>
+            <?php if( !is_front_page() ): ?>
             <a href="<?= home_url(); ?>" class="header__logo logo">
                 <img src="<?= STANDART_DIR; ?>img/logo.svg" alt="" class="header__logo-img logo__img">
             </a>
@@ -46,4 +47,4 @@
 <!-- /. Header -->
 
 <!-- MAIN -->
-<main class="main page__container">
+<main class="main page__container <?php if( is_front_page() ): ?>page-news<?php endif; ?>">
