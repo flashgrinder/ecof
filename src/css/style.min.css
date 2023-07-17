@@ -3097,6 +3097,12 @@ img {
     height: auto;
   }
 
+  .slider-main__pagination {
+    position: static;
+    bottom: auto;
+    margin-top: 30px;
+  }
+
   .slider-team {
     padding: 50px 0 205px;
   }
