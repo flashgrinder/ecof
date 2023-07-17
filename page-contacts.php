@@ -10,7 +10,7 @@
         <div class="contacts__inner">
             <address class="contacts__info">
                 <div class="contacts__item">
-                    <a class="contact__item-wrap" href="tel:89536383516">
+                    <a class="contact__item-wrap" href="tel:+7(917)2104781">
                         <div class="contacts__item-icon">
                             <img src="<?= STANDART_DIR; ?>img/contacts/phone.svg" alt="" class="contacts__item-img">
                         </div>
@@ -19,7 +19,7 @@
                                 Телефон для связи
                             </div>
                             <div class="contacts__item-subtitle text text--medium text--black text--w-light">
-                                8 953 638 35 16
+                                +7(917)210-47-81
                             </div>
                         </div>
                     </a>
@@ -50,6 +50,21 @@
                             </div>
                             <div class="contacts__item-subtitle text text--medium text--black text--w-light">
                                 ecofriends_project
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="contacts__item">
+                    <a class="contact__item-wrap" href="mailto:mail@eco-friends.info">
+                        <div class="contacts__item-icon">
+                            <img src="<?= STANDART_DIR; ?>img/contacts/mail.svg" alt="" class="contacts__item-img">
+                        </div>
+                        <div class="contacts__item-text">
+                            <div class="contacts__item-title title title--small title--black title--w-normal">
+                                Почта
+                            </div>
+                            <div class="contacts__item-subtitle text text--medium text--black text--w-light">
+                                mail@eco-friends.info
                             </div>
                         </div>
                     </a>

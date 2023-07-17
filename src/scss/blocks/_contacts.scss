@@ -15,7 +15,7 @@
 }
 
 .contacts__item ~ .contacts__item {
-  margin-top: 66px;
+  margin-top: 20px;
   @include tabletSM(margin-top, 0);
 }
 

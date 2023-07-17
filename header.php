@@ -34,8 +34,8 @@
                 ?>
             </div>
             <?php if( !is_front_page() ): ?>
-                <a href="tel:89536383516" class="header__phone text text--medium text--black text--w-light link hide-mobile">
-                    8 953 638 35 16
+                <a href="tel:+7(917)2104781" class="header__phone text text--medium text--black text--w-light link hide-mobile">
+                    +7(917)210-47-81
                 </a>
             <?php endif; ?>
             <div class="header__burger-menu burger-menu js-burger">

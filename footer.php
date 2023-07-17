@@ -28,8 +28,8 @@
                 </p>
             </div>
             <div class="footer__info">
-                <a href="tel:89536383516" class="footer__phone text text--medium text--black text--w-light link">
-                    8 953 638 35 16
+                <a href="tel:+7(917)2104781" class="footer__phone text text--medium text--black text--w-light link">
+                    +7(917)210-47-81
                 </a>
                 <div class="footer__socials">
                     <a href="https://vk.com/ecofriends_project" class="footer__social-item">

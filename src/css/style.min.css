@@ -1759,7 +1759,7 @@ img {
 }
 
 .contacts__item ~ .contacts__item {
-  margin-top: 66px;
+  margin-top: 20px;
 }
 
 .contact__item-wrap {
