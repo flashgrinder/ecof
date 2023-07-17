@@ -3193,6 +3193,10 @@ img {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
 
+  .slider-team {
+    background-position: 35% 60%;
+  }
+
   .slider-team__card-pic {
     width: 280px;
     height: 280px;

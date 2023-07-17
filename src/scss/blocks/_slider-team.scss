@@ -6,6 +6,7 @@
   background-position: center;
   background-size: cover;
   @include mobile(padding, 50px 0 205px);
+  @include mobileXS(background-position, 35% 60%);
 }
 
 .slider-team__outer {
