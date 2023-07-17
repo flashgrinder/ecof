@@ -2289,12 +2289,12 @@ img {
 /* Slider-main */
 
 .slider-main {
-  padding: 0 0 50px;
+  padding: 100px 0 50px;
 }
 
 .slider-main__swiper-wrapper.swiper-wrapper {
   align-items: stretch;
-  height: 75vh;
+  height: 80vh;
 }
 
 .slider-main__swiper-slide.swiper-slide {
@@ -2326,9 +2326,11 @@ img {
 .slider-main__pagination {
   display: flex;
   justify-content: center;
-  margin-top: 30px;
   margin-bottom: 20px;
   width: 100%;
+  position: absolute;
+  bottom: 0;
+  z-index: 10;
 }
 
 .slider-main__bullet {
