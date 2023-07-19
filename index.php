@@ -86,7 +86,7 @@
                     Мы в сми
                 </h2>
                 <?php
-                $post_list = new WP_Query(array(
+                $post_smi = new WP_Query(array(
                     'post_type'   => 'post',
                     'category_name' => 'smi-o-nas',
                     'posts_per_page' => 12,
