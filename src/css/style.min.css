@@ -2080,6 +2080,8 @@ img {
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   height: 100%;
+  overflow-y: scroll;
+  max-height: 1150px;
 }
 
 .news__item {
@@ -2665,6 +2667,26 @@ img {
 .accordion__item.is-active .accordion__text {
   opacity: 1;
   max-height: 500px;
+}
+
+/* Scrollbar */
+
+*::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 2px;
+  background-color: var(--color-green);
+}
+
+*::-webkit-scrollbar {
+  width: 4px;
+  height: 30px;
+  background-color: var(--color-blue);
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: var(--color-blue);
 }
 
 /* Footer */
