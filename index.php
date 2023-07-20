@@ -12,7 +12,7 @@
                 $post_list = new WP_Query(array(
                     'post_type'   => 'post',
                     'category__not_in' => [-7],
-                    'posts_per_page' => 2,
+                    'posts_per_page' => 3,
                 ));
             ?>
             <?php if( $post_list->have_posts() ) :
