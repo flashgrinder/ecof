@@ -8,10 +8,11 @@
         <div class="news__inner">
             <div class="news__list">
             <?php
+                global $wp_query;
                 $post_list = new WP_Query(array(
                     'post_type'   => 'post',
                     'category__not_in' => [-7],
-                    'posts_per_page' => 13,
+                    'posts_per_page' => 2,
                 ));
             ?>
             <?php if( $post_list->have_posts() ) :
@@ -77,6 +78,15 @@
                         </div>
                     </article>
                 <?php endwhile; ?>
+
+                <?php if (  $wp_query->max_num_pages > 1 ) : ?>
+                    <script id="true_loadmore">
+                        var ajaxurl = '<?php echo site_url() ?>/wp-admin/admin-ajax.php';
+                        var true_posts = '<?php echo serialize($wp_query->query_vars); ?>';
+                        var current_page = <?php echo (get_query_var('paged')) ? get_query_var('paged') : 1; ?>;
+                    </script>
+                <?php endif; ?>
+
                 <?php wp_reset_postdata(); ?>
             <?php  endif; ?>
             </div>
@@ -89,7 +99,7 @@
                 $post_smi = new WP_Query(array(
                     'post_type'   => 'post',
                     'category_name' => 'smi-o-nas',
-                    'posts_per_page' => 12,
+                    'posts_per_page' => 24,
                 ));
                 ?>
                 <?php if( $post_smi->have_posts() ) :

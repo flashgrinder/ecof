@@ -7,6 +7,10 @@
 </head>
 <body class="page bg--white js-page-open-menu">
 
+<div class="preloader">
+    <div class="load is-loading"></div>
+</div>
+
 <!-- Header -->
 <header class="header <?php if( is_front_page() ): ?>header--home<?php endif; ?>">
     <?php if( is_front_page() ): ?>

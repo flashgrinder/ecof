@@ -49,3 +49,35 @@
     add_action( 'init', function () {
         register_taxonomy_for_object_type( 'category', 'page' );
     } );
+
+	//	Подгрузка постов
+	function true_loadmore_scripts() {
+		wp_enqueue_script( 'true_loadmore', get_stylesheet_directory_uri() . '/inc/loadmore.js', array('jquery') );
+	}
+
+	add_action( 'wp_enqueue_scripts', 'true_loadmore_scripts' );
+
+	function true_load_posts(){
+
+		$args = unserialize( stripslashes( $_POST['query'] ) );
+		$args['paged'] = $_POST['page'] + 1; // следующая страница
+		$args['post_status'] = 'publish';
+
+		// обычно лучше использовать WP_Query, но не здесь
+		query_posts( $args );
+		// если посты есть
+		if( have_posts() ) :
+
+			// запускаем цикл
+			while( have_posts() ): the_post();
+
+				get_template_part( 'template-parts/template', 'post' );
+
+			endwhile;
+
+		endif;
+		die();
+	}
+
+	add_action('wp_ajax_loadmore', 'true_load_posts');
+	add_action('wp_ajax_nopriv_loadmore', 'true_load_posts');
