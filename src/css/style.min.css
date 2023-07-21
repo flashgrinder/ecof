@@ -1756,6 +1756,10 @@ img {
 
 /* Contacts */
 
+.contacts {
+  padding: 100px 0 100px;
+}
+
 .contacts__inner {
   display: flex;
   grid-gap: 100px;
@@ -2061,7 +2065,6 @@ img {
 .news__inner {
   display: flex;
   grid-gap: 30px 25px;
-  margin-top: 100px;
 }
 
 .news__list {
@@ -3288,6 +3291,10 @@ img {
 
   .features__card-title {
     background-image: none !important;
+  }
+
+  .contacts {
+    padding: 50px 0 50px;
   }
 
   .contact__item-wrap {

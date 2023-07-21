@@ -14,7 +14,7 @@
 .news__inner {
   display: flex;
   grid-gap: 30px 25px;
-  margin-top: 100px;
+  //margin-top: 100px;
   @include tablet(margin-top, 50px);
   @include mobileXS-block {
     flex-direction: column;

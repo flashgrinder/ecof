@@ -2,7 +2,7 @@
 <?php get_header(); ?>
 
 <!-- Contacts -->
-<div class="contacts block-padding-large">
+<div class="contacts">
     <div class="contacts__body container">
         <h1 class="contacts__heading title title--medium title--black title--w-bold title--indent-large center">
             Где мы находимся?
