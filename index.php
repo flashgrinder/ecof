@@ -24,9 +24,11 @@
                                     <div class="news__cat">
                                         Главная новость
                                     </div>
-                                    <h3 class="news__title title title--small title--black title--w-medium">
-                                        <?php the_title(); ?>
-                                    </h3>
+                                    <a href="<?php the_permalink(); ?>" class="news__link-title">
+                                        <h3 class="news__title title title--tiny title--black title--w-medium">
+                                            <?php the_title(); ?>
+                                        </h3>
+                                    </a>
                                     <p class="news__excerpt text text--black text--w-light">
                                         <?php the_excerpt(); ?>
                                     </p>
@@ -60,9 +62,11 @@
                                 echo $category[0]->cat_name;
                             ?>
                         </a>
-                        <h3 class="news__title title title--tiny title--black title--w-medium">
-                            <?php the_title(); ?>
-                        </h3>
+                        <a href="<?php the_permalink(); ?>" class="news__link-title">
+                            <h3 class="news__title title title--tiny title--black title--w-medium">
+                                <?php the_title(); ?>
+                            </h3>
+                        </a>
                         <p class="news__excerpt text text--black text--normal text--w-light">
                             <?php the_excerpt(); ?>
                         </p>
@@ -109,9 +113,11 @@
                                 <div class="news__date text text--normal text--black text--w-light">
                                     <?= get_the_date('F j, Y'); ?>
                                 </div>
-                                <h3 class="news__title title title--tiny title--black title--w-medium">
-                                    <?php the_title(); ?>
-                                </h3>
+                                <a href="<?php the_permalink(); ?>" class="news__link-title">
+                                    <h3 class="news__title title title--tiny title--black title--w-medium">
+                                        <?php the_title(); ?>
+                                    </h3>
+                                </a>
                                 <div class="news__footer">
                                     <a href="<?php the_permalink(); ?>" class="news__link text text--black text--w-light">
                                         Подробнее

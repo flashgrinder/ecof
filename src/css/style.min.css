@@ -2101,6 +2101,18 @@ img {
   text-decoration: none;
 }
 
+.news__title {
+  transition: color 0.2s ease-in-out;
+}
+
+.news__link-title {
+  text-decoration: none;
+}
+
+.news__link-title:hover .news__title {
+  color: var(--color-blue);
+}
+
 .news__arrow {
   margin-left: 12px;
 }
@@ -2696,6 +2708,26 @@ img {
   border-radius: 2px;
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   background-color: var(--color-blue);
+}
+
+/* Post */
+
+.post__pic {
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.post__img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.post__info {
+  margin-top: 50px;
 }
 
 /* Preloader */

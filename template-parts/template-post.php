@@ -5,9 +5,11 @@
 		echo $category[0]->cat_name;
 		?>
 	</a>
-	<h3 class="news__title title title--tiny title--black title--w-medium">
-		<?php the_title(); ?>
-	</h3>
+	<a href="<?php the_permalink(); ?>" class="news__link-title">
+		<h3 class="news__title title title--tiny title--black title--w-medium">
+			<?php the_title(); ?>
+		</h3>
+	</a>
 	<p class="news__excerpt text text--black text--normal text--w-light">
 		<?php the_excerpt(); ?>
 	</p>
