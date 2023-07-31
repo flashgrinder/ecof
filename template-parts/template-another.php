@@ -21,7 +21,7 @@
             ?>
             <?php if( $project_list->have_posts() ) :
                 while( $project_list->have_posts() ) : $project_list->the_post(); ?>
-                    <a href="<?php the_permalink(); ?>" class="another__item">
+                    <a href="<?php the_permalink(); ?>" class="another__item" title="<?php the_field('page_title'); ?>">
                         <div class="another__icon">
                             <?php
                                 $page_icon = get_field('page_icon');

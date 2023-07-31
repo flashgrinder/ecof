@@ -79,13 +79,16 @@
 
 .another__img-icon {
   transform: scale(0.8);
-  filter: grayscale(1);
+  //filter: grayscale(1);
+  filter: hue-rotate(115deg);
+  opacity: 0.5;
   transition: transform .3s ease-in-out, filter .3s ease-in-out;
 }
 
 .another__item:hover .another__img-icon {
-  transform: scale(1);
-  filter: grayscale(0);
+  transform: scale(.9);
+  filter: hue-rotate(0);
+  opacity: 1;
 }
 
 .another__title {

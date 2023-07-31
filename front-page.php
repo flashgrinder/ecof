@@ -211,32 +211,32 @@
                 <section class="another another--main-page">
                     <div class="another__body">
                         <div class="another__items tabs__buttons">
-                            <a href="javascript:;" class="another__item is-active tabs__button" data-tab-trigger="1">
+                            <a href="javascript:;" class="another__item is-active tabs__button" data-tab-trigger="1" title="ECOprof">
                                 <div class="another__icon">
                                     <img src="<?= STANDART_DIR; ?>img/another/icon-1.svg" alt="" class="another__img-icon">
                                 </div>
                             </a>
-                            <a href="javascript:;" class="another__item tabs__button" data-tab-trigger="2">
+                            <a href="javascript:;" class="another__item tabs__button" data-tab-trigger="2" title="Внедрение РСО">
                                 <div class="another__icon">
                                     <img src="<?= STANDART_DIR; ?>img/another/icon-2.svg" alt="" class="another__img-icon">
                                 </div>
                             </a>
-                            <a href="javascript:;" class="another__item tabs__button" data-tab-trigger="3">
+                            <a href="javascript:;" class="another__item tabs__button" data-tab-trigger="3" title="ЭКОклуб">
                                 <div class="another__icon">
                                     <img src="<?= STANDART_DIR; ?>img/another/icon-3.svg" alt="" class="another__img-icon">
                                 </div>
                             </a>
-                            <a href="javascript:;" class="another__item tabs__button" data-tab-trigger="4">
+                            <a href="javascript:;" class="another__item tabs__button" data-tab-trigger="4" title="ЭКОпросвещение">
                                 <div class="another__icon">
                                     <img src="<?= STANDART_DIR; ?>img/another/icon-4.svg" alt="" class="another__img-icon">
                                 </div>
                             </a>
-                            <a href="javascript:;" class="another__item tabs__button" data-tab-trigger="5">
+                            <a href="javascript:;" class="another__item tabs__button" data-tab-trigger="5" title="Волонтерский корпус">
                                 <div class="another__icon">
                                     <img src="<?= STANDART_DIR; ?>img/another/icon-5.svg" alt="" class="another__img-icon">
                                 </div>
                             </a>
-                            <a href="javascript:;" class="another__item tabs__button" data-tab-trigger="6">
+                            <a href="javascript:;" class="another__item tabs__button" data-tab-trigger="6" title="ЭКОквест и ЭКОпикник">
                                 <div class="another__icon">
                                     <img src="<?= STANDART_DIR; ?>img/another/icon-6.svg" alt="" class="another__img-icon">
                                 </div>
