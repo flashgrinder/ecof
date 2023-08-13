@@ -61,7 +61,7 @@
                             <div class="slider-cards__swiper-slide swiper-slide">
                                 <article class="plunk">
                                     <div class="plunk__icon">
-                                        <img src="<?= STANDART_DIR; ?>img/plunks/plunk-1.svg" alt="" class="plunk__img-icon">
+                                        <img src="<?= STANDART_DIR; ?>img/plunks/plunk-2.svg" alt="" class="plunk__img-icon">
                                     </div>
                                     <p class="plunk__text text text--normal text--black text--w-light center">
                                         Посещение тематических выставок
@@ -71,7 +71,7 @@
                             <div class="slider-cards__swiper-slide swiper-slide">
                                 <article class="plunk">
                                     <div class="plunk__icon">
-                                        <img src="<?= STANDART_DIR; ?>img/plunks/plunk-1.svg" alt="" class="plunk__img-icon">
+                                        <img src="<?= STANDART_DIR; ?>img/plunks/plunk-3.svg" alt="" class="plunk__img-icon">
                                     </div>
                                     <p class="plunk__text text text--normal text--black text--w-light center">
                                         Участие в конференциях и форумах по всей России
@@ -81,7 +81,7 @@
                             <div class="slider-cards__swiper-slide swiper-slide">
                                 <article class="plunk">
                                     <div class="plunk__icon">
-                                        <img src="<?= STANDART_DIR; ?>img/plunks/plunk-1.svg" alt="" class="plunk__img-icon">
+                                        <img src="<?= STANDART_DIR; ?>img/plunks/plunk-4.svg" alt="" class="plunk__img-icon">
                                     </div>
                                     <p class="plunk__text text text--normal text--black text--w-light center">
                                         Мастер-классы по кастомизации одежды, изготовлению открыток и др.
@@ -91,7 +91,7 @@
                             <div class="slider-cards__swiper-slide swiper-slide">
                                 <article class="plunk">
                                     <div class="plunk__icon">
-                                        <img src="<?= STANDART_DIR; ?>img/plunks/plunk-1.svg" alt="" class="plunk__img-icon">
+                                        <img src="<?= STANDART_DIR; ?>img/plunks/plunk-5.svg" alt="" class="plunk__img-icon">
                                     </div>
                                     <p class="plunk__text text text--normal text--black text--w-light center">
                                         Обучение по системе наставничества
