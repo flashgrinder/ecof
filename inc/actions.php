@@ -51,11 +51,11 @@
     } );
 
 	//	Подгрузка постов
-	function true_loadmore_scripts() {
-		wp_enqueue_script( 'true_loadmore', get_stylesheet_directory_uri() . '/inc/loadmore.js', array('jquery') );
-	}
-
-	add_action( 'wp_enqueue_scripts', 'true_loadmore_scripts' );
+//	function true_loadmore_scripts() {
+//		wp_enqueue_script( 'true_loadmore', get_stylesheet_directory_uri() . '/inc/loadmore.js', array('jquery') );
+//	}
+//
+//	add_action( 'wp_enqueue_scripts', 'true_loadmore_scripts' );
 
 	function true_load_posts(){
 
