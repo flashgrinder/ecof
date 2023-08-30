@@ -12,6 +12,9 @@
                         $main_slider_title = get_sub_field('main_slider_title');
                         $main_slider_excerpt = get_sub_field('main_slider_excerpt');
                         $main_slider_img = get_sub_field('main_slider_img');
+                        $main_slider_select_btn = get_sub_field('main_slider_select_btn');
+                        $main_slider_link = get_sub_field('main_slider_link');
+                        $main_slider_btn_modal = get_sub_field('main_slider_btn_modal');
 
                         ?>
                         <div class="slider-main__swiper-slide swiper-slide">
@@ -27,9 +30,20 @@
                                             <?= $main_slider_excerpt; ?>
                                         </div>
                                     <?php endif; ?>
-                                    <a href="javascript:;" class="slider-main__button button button--primary" data-modal="#feedback">
-                                        Присоединяйся
-                                    </a>
+                                    <?php if ( $main_slider_select_btn == 'link' ) : ?>
+                                        <?php if (!empty($main_slider_link)) : ?>
+                                            <a href="<?= $main_slider_link['url']; ?>" class="slider-main__button button button--primary">
+                                                <?= $main_slider_link['title']; ?>
+                                            </a>
+                                        <?php endif; ?>
+                                    <?php endif; ?>
+                                    <?php if ( $main_slider_select_btn == 'btn' ) : ?>
+                                        <?php if (!empty($main_slider_btn_modal)) : ?>
+                                            <a href="javascript:;" class="slider-main__button button button--primary" data-modal="#feedback">
+                                                <?= $main_slider_btn_modal; ?>
+                                            </a>
+                                        <?php endif; ?>
+                                    <?php endif; ?>
                                 </div>
                                 <?php if (!empty($main_slider_img)) : ?>
                                     <div class="slider-main__slide-pic">

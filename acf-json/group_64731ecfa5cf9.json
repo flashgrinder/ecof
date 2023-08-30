@@ -103,6 +103,88 @@
                     "parent_repeater": "field_64731ed073618"
                 },
                 {
+                    "key": "field_64ef2c7932d29",
+                    "label": "Выбор кнопки",
+                    "name": "main_slider_select_btn",
+                    "aria-label": "",
+                    "type": "select",
+                    "instructions": "Показывать ссылку\/кнопку или скрыть.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "link": "Ссылка",
+                        "btn": "Модальное окно",
+                        "none": "Скрыть кнопку"
+                    },
+                    "default_value": "none",
+                    "return_format": "value",
+                    "multiple": 0,
+                    "allow_null": 0,
+                    "ui": 1,
+                    "ajax": 0,
+                    "placeholder": "",
+                    "parent_repeater": "field_64731ed073618"
+                },
+                {
+                    "key": "field_64ef2af5e4e7a",
+                    "label": "Кнопка с ссылкой",
+                    "name": "main_slider_link",
+                    "aria-label": "",
+                    "type": "link",
+                    "instructions": "Укажите ссылку на страницу.",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_64ef2c7932d29",
+                                "operator": "==",
+                                "value": "link"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "parent_repeater": "field_64731ed073618"
+                },
+                {
+                    "key": "field_64ef2d7032d2a",
+                    "label": "Кнопка с модальным окном",
+                    "name": "main_slider_btn_modal",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "Укажите ссылку на страницу.",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_64ef2c7932d29",
+                                "operator": "==",
+                                "value": "btn"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_64731ed073618"
+                },
+                {
                     "key": "field_64731fc67361c",
                     "label": "Изображение",
                     "name": "main_slider_img",
@@ -314,5 +396,5 @@
     "active": true,
     "description": "Главная страница",
     "show_in_rest": 0,
-    "modified": 1685267404
+    "modified": 1693396525
 }
